@@ -1,15 +1,23 @@
 {
   "date": "2026-08-06",
   "collector": "钱多多",
-  "sourcePipeline": "news-service MCP biz_opportunity distributor, since_hours=72, take=60, total=480",
-  "sourcesUsed": ["showhn", "hn_best", "lobsters", "producthunt", "techcrunch_ai", "last_week_in_ai", "tmtpost", "ifanr", "sspai", "cyzone", "weiyangx", "ai_bot_projects"],
+  "sourcePipeline": "news-service MCP biz_opportunity distributor: since_hours=72 take=60 (480 total) + providers=producthunt/lobsters take=40 + providers=tmtpost/cyzone/ifanr/sspai take=30 + GitHub Trending daily",
+  "sourcesUsed": ["showhn", "hn_best", "lobsters", "producthunt", "techcrunch_ai", "last_week_in_ai", "tmtpost", "ifanr", "sspai", "cyzone", "weiyangx", "ai_bot_projects", "github_trending"],
   "verification": {
-    "method": "curl + regex 提取 title/og:description 验证站点真实性",
+    "method": "curl + Python urllib + regex 提取 title/og:description 验证站点真实性",
     "verifiedUrls": [
       "https://www.manhwaai.net",
       "https://velokey.ai",
       "https://staunchapps.com/launch/",
-      "https://flowiseai.com/sunset"
+      "https://flowiseai.com/sunset",
+      "https://www.producthunt.com/products/wisprflow",
+      "https://wisprflow.ai",
+      "https://www.producthunt.com/products/backengine-mcp",
+      "https://backengine.ai",
+      "https://www.producthunt.com/products/keystroke-2",
+      "https://keystroke.ai",
+      "https://github.com/firecrawl/pdf-inspector",
+      "https://github.com/TencentCloud/TencentDB-Agent-Memory"
     ],
     "verifiedAt": "2026-08-06"
   },
@@ -45,7 +53,47 @@
       "sourceUrl": "https://flowiseai.com/sunset",
       "feasibility": 5,
       "category": "服务"
+    },
+    {
+      "title": "Wispr Flow：全设备语音输入生产力工具",
+      "slug": "2026-08-06-wispr-flow",
+      "source": "Product Hunt",
+      "sourceUrl": "https://www.producthunt.com/products/wisprflow",
+      "feasibility": 3,
+      "category": "工具"
+    },
+    {
+      "title": "BackEngine MCP：企业知识接入 AI 的 MCP 中间层",
+      "slug": "2026-08-06-backengine-mcp",
+      "source": "Product Hunt",
+      "sourceUrl": "https://www.producthunt.com/products/backengine-mcp",
+      "feasibility": 3,
+      "category": "开发者工具"
+    },
+    {
+      "title": "Keystroke：企业内部 AI Agent 构建平台",
+      "slug": "2026-08-06-keystroke",
+      "source": "Product Hunt",
+      "sourceUrl": "https://www.producthunt.com/products/keystroke-2",
+      "feasibility": 3,
+      "category": "开发者工具"
+    },
+    {
+      "title": "firecrawl/pdf-inspector：开源 PDF 检测分类库",
+      "slug": "2026-08-06-firecrawl-pdf-inspector",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/firecrawl/pdf-inspector",
+      "feasibility": 4,
+      "category": "开源商机"
+    },
+    {
+      "title": "TencentDB Agent Memory：AI Agent 团队记忆中枢",
+      "slug": "2026-08-06-tencentdb-agent-memory",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
+      "feasibility": 3,
+      "category": "开发者工具"
     }
   ],
-  "notes": "首日收集。从 480 条原始信号中筛选出 4 个可验证的真实项目：3 个产品型 + 1 个信号型商机。所有出处 URL 均已 curl 验证可访问。"
+  "notes": "首日火力全开：从 480 条 news-service 信号 + GitHub Trending 中筛选验证出 9 个真实项目（4 个 HN + 3 个 Product Hunt + 2 个 GitHub Trending）。国内信源（钛媒体/创业邦）本轮以 IPO/大厂宏观为主，无适合个人落地项目。所有出处 URL 均已验证可访问。"
 }
