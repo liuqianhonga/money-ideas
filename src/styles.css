@@ -130,6 +130,65 @@ table.dim-table th { background: rgba(255,255,255,0.04); color: var(--accent); w
 .score-fill { height: 100%; background: linear-gradient(90deg, var(--accent), var(--accent-soft)); border-radius: 4px; }
 .score-label { font-size: 0.85rem; color: var(--muted); width: 140px; }
 
+/* 筛选栏 */
+.filter-panel {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  margin-bottom: 24px;
+}
+.filter-row { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 10px; flex-wrap: wrap; }
+.filter-row:last-child { margin-bottom: 0; }
+.filter-label { font-size: 0.85rem; color: var(--muted); padding-top: 6px; white-space: nowrap; min-width: 76px; }
+.filter-chips { display: flex; flex-wrap: wrap; gap: 8px; flex: 1; }
+.chip {
+  font-size: 0.8rem;
+  padding: 4px 14px;
+  border-radius: 20px;
+  border: 1px solid var(--card-border);
+  background: rgba(255,255,255,0.03);
+  color: var(--muted);
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: inherit;
+}
+.chip:hover { border-color: var(--accent); color: var(--accent); }
+.chip.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #1a1a1a;
+  font-weight: 700;
+}
+.filter-count { font-size: 0.82rem; color: var(--accent); padding-top: 6px; }
+
+/* 卡片内标签 */
+.tags-line { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 6px; }
+.tag-mini {
+  font-size: 0.72rem;
+  padding: 1px 8px;
+  border-radius: 4px;
+  background: rgba(96, 165, 250, 0.1);
+  color: var(--blue);
+  border: 1px solid rgba(96, 165, 250, 0.2);
+}
+
+/* 详情页信心指数卡片 */
+.confidence-card {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.12), rgba(245, 158, 11, 0.03));
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  margin: 20px 0 8px;
+}
+.confidence-card .conf-big { font-size: 2rem; font-weight: 800; color: var(--accent); }
+.confidence-card .conf-label { color: var(--muted); font-size: 0.85rem; }
+.dim-scores { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 10px; }
+.dim-score { flex: 1; min-width: 130px; }
+.dim-score .dim-name { font-size: 0.8rem; color: var(--muted); margin-bottom: 4px; }
+.dim-score .dim-bar { height: 6px; background: rgba(255,255,255,0.06); border-radius: 3px; overflow: hidden; }
+.dim-score .dim-fill { height: 100%; background: var(--accent); border-radius: 3px; }
+
 footer.site-footer {
   margin-top: 60px;
   padding: 24px 0 40px;

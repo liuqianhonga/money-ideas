@@ -10,6 +10,9 @@ skills: 资料整理、内容创作（小红书/抖音）、客服话术、选�
 paybackPeriod: 1-3 个月（首单可能更快）
 investment: 时间为主（10-50 小时做第一批产品）；基本零资金
 feasibility: 5
+effortScore: 1
+barrierScore: 1
+monetizationEase: 5
 source: 知乎副业案例
 sourceUrl: https://zhuanlan.zhihu.com/p/684144193
 summary: 做虚拟产品一份卖无数次——知乎 50 多个副业尝试后的长期稳定项目

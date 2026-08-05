@@ -10,6 +10,9 @@ skills: Web 开发（前端为主）、模板设计、SEO/内容获客
 paybackPeriod: 1-3 个月（案例首月即 $3000）
 investment: 时间为主（2-4 周）；托管 $10-50/月
 feasibility: 4
+effortScore: 2
+barrierScore: 1
+monetizationEase: 4
 source: Sideidea 盈利案例
 sourceUrl: https://sideidea.com/article/57
 summary: 帮人做简历的模板工具，上线首月收入 $3000——真实盈利案例

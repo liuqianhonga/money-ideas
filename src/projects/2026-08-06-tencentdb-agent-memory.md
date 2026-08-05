@@ -10,6 +10,9 @@ skills: 向量数据库（pgvector/Chroma/Qdrant）、RAG、Agent 会话管理�
 paybackPeriod: 6-12 个月
 investment: 基础设施 $50-500/月；主要是开发时间
 feasibility: 3
+effortScore: 4
+barrierScore: 4
+monetizationEase: 3
 source: GitHub Trending
 sourceUrl: https://github.com/TencentCloud/TencentDB-Agent-Memory
 summary: ⭐1891 的团队级 AI Agent 记忆中枢——把对话/文档/代码变成 Agent 的长期记忆

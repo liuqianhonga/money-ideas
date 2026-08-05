@@ -10,6 +10,9 @@ skills: 语音识别/ASR 集成（Whisper/Deepgram）、桌面/移动客户端�
 paybackPeriod: 6-12 个月
 investment: API 成本前期 $100-500/月；主要是研发时间
 feasibility: 3
+effortScore: 4
+barrierScore: 3
+monetizationEase: 3
 source: Product Hunt
 sourceUrl: https://www.producthunt.com/products/wisprflow
 summary: 语音转文字生产力工具，在任意应用内实时转写+自动编辑，支持100+语言

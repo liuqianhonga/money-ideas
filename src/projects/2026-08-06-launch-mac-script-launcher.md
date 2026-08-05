@@ -10,6 +10,9 @@ skills: Swift/macOS 开发、JavaScript 脚本编写、产品发布（GitHub/开
 paybackPeriod: 1-3 个月（作者已完成开发并上线）
 investment: 时间为主（约 2-4 周开发）；Apple 开发者账号 $99/年
 feasibility: 3
+effortScore: 2
+barrierScore: 2
+monetizationEase: 3
 source: Hacker News Show HN
 sourceUrl: https://news.ycombinator.com/item?id=49162808
 summary: 个人开发者做的 Mac 脚本启动器，卖 $12 买断，7 天试用

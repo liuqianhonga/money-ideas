@@ -10,6 +10,9 @@ skills: 数据抓取/聚合、网站开发、招聘行业理解、邮件营销
 paybackPeriod: 6-12 个月
 investment: 开发时间为主；服务器 $50-200/月
 feasibility: 3
+effortScore: 3
+barrierScore: 3
+monetizationEase: 3
 source: Sideidea 盈利案例
 sourceUrl: https://sideidea.com/article/50
 summary: 远程工作聚合平台，收入 $10 万+——从个人副业变成全职的经典路径

@@ -10,6 +10,9 @@ skills: Web 开发、房产行业理解、双边市场运营（供给侧 BD）
 paybackPeriod: 6-12 个月（案例前 6 个月回本）
 investment: 原型开发 £20,000（约 ¥18 万）+ 营销预算；国内可降低
 feasibility: 3
+effortScore: 3
+barrierScore: 3
+monetizationEase: 3
 source: Sideidea 盈利案例
 sourceUrl: https://sideidea.com/article/55
 summary: 英国房产中介费比价平台，月入 ¥27 万——双边市场模式的真实案例

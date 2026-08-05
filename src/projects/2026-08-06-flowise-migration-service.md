@@ -10,6 +10,9 @@ skills: 低代码平台（Flowise/n8n/Dify）、工作流设计、Docker 部署�
 paybackPeriod: 1-2 个月（接单即收）
 investment: 时间为主；Docker/服务器成本 $20-100/月
 feasibility: 5
+effortScore: 2
+barrierScore: 2
+monetizationEase: 5
 source: Hacker News Front Page + Flowise 官方公告
 sourceUrl: https://flowiseai.com/sunset
 summary: Flowise 官方宣布关停，大量用户需迁移——迁移服务、自托管代运维是确定性商机

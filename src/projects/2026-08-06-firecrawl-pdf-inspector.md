@@ -10,6 +10,9 @@ skills: Rust 或 Python、API 开发、PDF 处理知识、开发者关系（DevR
 paybackPeriod: 3-6 个月
 investment: 时间为主；API 托管 $50-200/月
 feasibility: 4
+effortScore: 2
+barrierScore: 2
+monetizationEase: 4
 source: GitHub Trending
 sourceUrl: https://github.com/firecrawl/pdf-inspector
 summary: ⭐1583 的快速 PDF 检测库，自动区分扫描件/文本 PDF——开源工具转托管 API 的经典路径

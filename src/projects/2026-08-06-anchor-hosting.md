@@ -10,6 +10,9 @@ skills: Linux/Docker 运维、某一框架部署（WordPress/Node/Python）、�
 paybackPeriod: 3-6 个月
 investment: 服务器成本 $20-100/月（可先租后买）；时间为主
 feasibility: 4
+effortScore: 2
+barrierScore: 2
+monetizationEase: 4
 source: Sideidea 盈利案例
 sourceUrl: https://sideidea.com/article/45
 summary: 特定方向托管服务年收入 $20K——垂直托管是个人低成本高复利生意

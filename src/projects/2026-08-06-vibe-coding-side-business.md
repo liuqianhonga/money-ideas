@@ -10,6 +10,9 @@ skills: 提示词工程、产品思维、基础调试、工具使用（Claude Co
 paybackPeriod: 2-4 个月（快速试错迭代）
 investment: AI 订阅 $20-200/月；时间为主
 feasibility: 4
+effortScore: 2
+barrierScore: 2
+monetizationEase: 4
 source: 腾讯云开发者社区
 sourceUrl: https://cloud.tencent.com/developer/article/2662764
 summary: 不会写代码也能做软件——用 AI 编程快速做效率工具，订阅制变现

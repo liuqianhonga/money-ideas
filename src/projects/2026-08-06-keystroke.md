@@ -10,6 +10,9 @@ skills: AI Agent 编排、LLM 集成、企业工具连接（Slack/CRM/数据库�
 paybackPeriod: 6-12 个月
 investment: 研发为主；LLM 调用成本随用量上升，前期 $200-1000/月
 feasibility: 3
+effortScore: 4
+barrierScore: 4
+monetizationEase: 3
 source: Product Hunt
 sourceUrl: https://www.producthunt.com/products/keystroke-2
 summary: 描述你需要的 Agent，平台自动构建、连接工具、测试并部署到团队工作区

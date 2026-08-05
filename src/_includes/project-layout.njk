@@ -47,6 +47,36 @@
           <tr><th>可行性评分</th><td>{{ feasibility }}/5</td></tr>
         </table>
 
+        <!-- 信心指数卡片 -->
+        {% set conf = { monetizationEase: monetizationEase, effortScore: effortScore, barrierScore: barrierScore } | confidence %}
+        <div class="confidence-card">
+          <div style="display:flex; align-items:baseline; gap:12px;">
+            <span class="conf-big">{{ conf }}</span>
+            <span class="conf-label">
+              信心指数 / 100
+              {% if conf >= 80 %}· 🔥 极佳：低门槛、快变现，优先考虑
+              {% elif conf >= 60 %}· ✅ 良好：可行，需要一定投入
+              {% elif conf >= 40 %}· ⚠️ 一般：有潜力但门槛/周期长
+              {% else %}· ❌ 谨慎：难度大或变现慢{% endif %}
+            </span>
+          </div>
+          <div class="dim-scores">
+            {% set effortEase = 5 - (effortScore | default(3)) + 1 %}
+            <div class="dim-score">
+              <div class="dim-name">实施难度 {{ effortScore | default(3) }}/5（越低越好做）</div>
+              <div class="dim-bar"><div class="dim-fill" style="width: {{ (6 - (effortScore | default(3))) * 20 }}%"></div></div>
+            </div>
+            <div class="dim-score">
+              <div class="dim-name">门槛 {{ barrierScore | default(3) }}/5（越低越易入）</div>
+              <div class="dim-bar"><div class="dim-fill" style="width: {{ (6 - (barrierScore | default(3))) * 20 }}%"></div></div>
+            </div>
+            <div class="dim-score">
+              <div class="dim-name">变现难易 {{ monetizationEase | default(3) }}/5（越高越易变现）</div>
+              <div class="dim-bar"><div class="dim-fill" style="width: {{ (monetizationEase | default(3)) * 20 }}%"></div></div>
+            </div>
+          </div>
+        </div>
+
         <div class="article-body">
           {{ content | safe }}
         </div>

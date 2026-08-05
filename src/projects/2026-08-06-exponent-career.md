@@ -10,6 +10,9 @@ skills: 职业辅导知识、内容创作、社区运营、邮件营销
 paybackPeriod: 3-6 个月
 investment: 时间为主（内容制作）；工具成本 $50-200/月
 feasibility: 4
+effortScore: 2
+barrierScore: 2
+monetizationEase: 4
 source: Sideidea 盈利案例
 sourceUrl: https://sideidea.com/article/49
 summary: 求职面试准备+职业社区，收入累计 $25 万+——知识变现+社区模式真实案例

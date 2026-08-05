@@ -10,6 +10,9 @@ skills: MCP 协议开发、企业 SaaS 集成（Slack/Notion/CRM/Zendesk）、�
 paybackPeriod: 6-12 个月
 investment: 研发时间为主；基础设施 $100-500/月；企业销售周期长
 feasibility: 3
+effortScore: 4
+barrierScore: 4
+monetizationEase: 3
 source: Product Hunt
 sourceUrl: https://www.producthunt.com/products/backengine-mcp
 summary: 把 Slack/CRM/邮件等公司知识统一接进 Claude/ChatGPT，让 AI 基于完整企业数据回答
