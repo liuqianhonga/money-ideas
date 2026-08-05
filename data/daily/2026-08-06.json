@@ -1,10 +1,10 @@
 {
   "date": "2026-08-06",
   "collector": "钱多多",
-  "sourcePipeline": "news-service MCP biz_opportunity distributor: since_hours=72 take=60 (480 total) + providers=producthunt/lobsters take=40 + providers=tmtpost/cyzone/ifanr/sspai take=30 + GitHub Trending daily",
-  "sourcesUsed": ["showhn", "hn_best", "lobsters", "producthunt", "techcrunch_ai", "last_week_in_ai", "tmtpost", "ifanr", "sspai", "cyzone", "weiyangx", "ai_bot_projects", "github_trending"],
+  "sourcePipeline": "多信源深度挖掘：news-service MCP (480条) + GitHub Trending + Product Hunt + V2EX 分享创造 + Sideidea 真实盈利案例 + 腾讯云开发者社区 + 知乎副业复盘",
+  "sourcesUsed": ["showhn", "hn_best", "lobsters", "producthunt", "techcrunch_ai", "tmtpost", "ifanr", "sspai", "cyzone", "github_trending", "v2ex_create", "sideidea", "tencent_cloud_dev", "zhihu"],
   "verification": {
-    "method": "curl + Python urllib + regex 提取 title/og:description 验证站点真实性",
+    "method": "curl + Python urllib + regex 提取 title/og:description 验证站点真实性；Sideidea 案例以真实访谈收入数据为准",
     "verifiedUrls": [
       "https://www.manhwaai.net",
       "https://velokey.ai",
@@ -17,7 +17,19 @@
       "https://www.producthunt.com/products/keystroke-2",
       "https://keystroke.ai",
       "https://github.com/firecrawl/pdf-inspector",
-      "https://github.com/TencentCloud/TencentDB-Agent-Memory"
+      "https://github.com/TencentCloud/TencentDB-Agent-Memory",
+      "https://standardresume.co/",
+      "https://www.rentround.com/",
+      "https://www.anchor.host/",
+      "https://remotive.io/",
+      "https://www.levels.fyi/",
+      "https://cloud.tencent.com/developer/article/2662764",
+      "https://zhuanlan.zhihu.com/p/684144193",
+      "https://sideidea.com/article/55",
+      "https://sideidea.com/article/57",
+      "https://sideidea.com/article/45",
+      "https://sideidea.com/article/49",
+      "https://sideidea.com/article/50"
     ],
     "verifiedAt": "2026-08-06"
   },
@@ -93,7 +105,63 @@
       "sourceUrl": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
       "feasibility": 3,
       "category": "开发者工具"
+    },
+    {
+      "title": "Standard Resume：5 分钟做好看的简历",
+      "slug": "2026-08-06-standard-resume",
+      "source": "Sideidea 盈利案例",
+      "sourceUrl": "https://sideidea.com/article/57",
+      "feasibility": 4,
+      "category": "独立开发"
+    },
+    {
+      "title": "Rent Rround：英国房产中介比价平台",
+      "slug": "2026-08-06-rent-rround",
+      "source": "Sideidea 盈利案例",
+      "sourceUrl": "https://sideidea.com/article/55",
+      "feasibility": 3,
+      "category": "服务"
+    },
+    {
+      "title": "Anchor Hosting：垂直托管小生意",
+      "slug": "2026-08-06-anchor-hosting",
+      "source": "Sideidea 盈利案例",
+      "sourceUrl": "https://sideidea.com/article/45",
+      "feasibility": 4,
+      "category": "服务"
+    },
+    {
+      "title": "Vibe Coding 副业：AI 编程做效率工具",
+      "slug": "2026-08-06-vibe-coding-side-business",
+      "source": "腾讯云开发者社区",
+      "sourceUrl": "https://cloud.tencent.com/developer/article/2662764",
+      "feasibility": 4,
+      "category": "AI工具"
+    },
+    {
+      "title": "数字产品副业：闲鱼/小红书卖虚拟资料",
+      "slug": "2026-08-06-digital-products-side-business",
+      "source": "知乎副业案例",
+      "sourceUrl": "https://zhuanlan.zhihu.com/p/684144193",
+      "feasibility": 5,
+      "category": "内容"
+    },
+    {
+      "title": "Exponent：职业咨询+社区订阅",
+      "slug": "2026-08-06-exponent-career",
+      "source": "Sideidea 盈利案例",
+      "sourceUrl": "https://sideidea.com/article/49",
+      "feasibility": 4,
+      "category": "教育"
+    },
+    {
+      "title": "remotive.io：远程工作平台",
+      "slug": "2026-08-06-remotive-io",
+      "source": "Sideidea 盈利案例",
+      "sourceUrl": "https://sideidea.com/article/50",
+      "feasibility": 3,
+      "category": "服务"
     }
   ],
-  "notes": "首日火力全开：从 480 条 news-service 信号 + GitHub Trending 中筛选验证出 9 个真实项目（4 个 HN + 3 个 Product Hunt + 2 个 GitHub Trending）。国内信源（钛媒体/创业邦）本轮以 IPO/大厂宏观为主，无适合个人落地项目。所有出处 URL 均已验证可访问。"
+  "notes": "首日深度挖掘扩展：从 480 条信源信号 + GitHub Trending + Product Hunt + V2EX + Sideidea 真实盈利案例 + 中文社区深度搜索，共验证出 16 个项目。Sideidea 系列为真实盈利案例（Standard Resume 首月$3000、Rent Rround 月入¥27万、Exponent 累计$25万+、remotive.io $10万+、Anchor Hosting 年$20K），均有官网可访问验证。web_search 本日限流严重，改用 curl 直连 DuckDuckGo/Bing/百度（均被反爬）→ 最终以 Sideidea/V2EX/腾讯云/知乎文章 curl 抓取兜底。"
 }
