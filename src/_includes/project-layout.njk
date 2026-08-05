@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if title %}{{ title }} · {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <h1>💰 {{ site.title }}</h1>
+      <p class="subtitle">{{ site.description }}</p>
+      <nav class="site-nav">
+        <a href="/">📌 最新项目</a>
+        <a href="/archive/">📚 归档</a>
+      </nav>
+    </header>
+
+    <main>
+      <article>
+        <div class="article-header">
+          <div class="date" style="color: var(--muted);">📅 {{ date }}</div>
+          <h1>{{ title }}</h1>
+          <div class="badges">
+            {% if category %}<span class="badge">{{ category }}</span>{% endif %}
+            {% if businessModel %}<span class="badge blue">{{ businessModel }}</span>{% endif %}
+            {% if feasibility >= 4 %}<span class="badge hot">🔥 可行性 {{ feasibility }}/5</span>{% endif %}
+          </div>
+          <div class="meta">
+            <div class="source-link">
+              📎 出处：<a href="{{ sourceUrl }}" target="_blank" rel="noopener">{{ source }}</a>
+            </div>
+            <div style="margin-top: 4px;">🏷️ 标签：{{ tags | join(", ") }}</div>
+          </div>
+        </div>
+
+        <table class="dim-table">
+          <tr><th>商业模式</th><td>{{ businessModel | default("暂无") }}</td></tr>
+          <tr><th>变现方法</th><td>{{ monetization | default("暂无") }}</td></tr>
+          <tr><th>门槛</th><td>{{ barrier | default("暂无") }}</td></tr>
+          <tr><th>所需技能</th><td>{{ skills | default("暂无") }}</td></tr>
+          <tr><th>变现周期</th><td>{{ paybackPeriod | default("暂无") }}</td></tr>
+          <tr><th>投入成本</th><td>{{ investment | default("暂无") }}</td></tr>
+          <tr><th>可行性评分</th><td>{{ feasibility }}/5</td></tr>
+        </table>
+
+        <div class="article-body">
+          {{ content | safe }}
+        </div>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <p>{{ site.title }} · 每日更新 · 所有项目均注明出处，可回溯验证</p>
+    </footer>
+  </div>
+</body>
+</html>

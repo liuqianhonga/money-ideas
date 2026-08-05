@@ -1,0 +1,12 @@
+{
+  "name": "money-ideas",
+  "version": "1.0.0",
+  "description": "钱多多赚钱项目情报站 - 每日收集真实可落地的赚钱项目",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}

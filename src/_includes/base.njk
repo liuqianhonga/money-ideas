@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if title %}{{ title }} · {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <h1>💰 {{ site.title }}</h1>
+      <p class="subtitle">{{ site.description }}</p>
+      <nav class="site-nav">
+        <a href="/">📌 最新项目</a>
+        <a href="/archive/">📚 归档</a>
+      </nav>
+    </header>
+
+    <main>
+      {{ content | safe }}
+    </main>
+
+    <footer class="site-footer">
+      <p>{{ site.title }} · 每日更新 · 所有项目均注明出处，可回溯验证</p>
+    </footer>
+  </div>
+</body>
+</html>

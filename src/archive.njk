@@ -1,0 +1,24 @@
+---
+layout: base.njk
+title: 项目归档
+permalink: /archive/
+---
+
+<h1 style="font-size: 1.5rem; margin-bottom: 20px;">📚 全部项目归档</h1>
+
+{% set grouped = collections.projects | groupByDate %}
+{% for day in grouped %}
+<div class="archives-year">
+  <h2>📅 {{ day.date }}（{{ day.items.length }} 个）</h2>
+  <ul>
+    {% for item in day.items %}
+    <li>
+      <span class="d">{{ item.data.title }}</span>
+      <a href="{{ item.url }}">查看拆解 →</a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endfor %}
+
+<p style="color: var(--muted); margin-top: 30px;">没有更多了。每天新增的项目会出现在这里。</p>

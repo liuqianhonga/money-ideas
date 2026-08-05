@@ -1,0 +1,6 @@
+# 依赖
+node_modules/
+_site/
+.DS_Store
+*.log
+logs/

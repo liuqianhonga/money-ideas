@@ -1,0 +1,51 @@
+{
+  "date": "2026-08-06",
+  "collector": "钱多多",
+  "sourcePipeline": "news-service MCP biz_opportunity distributor, since_hours=72, take=60, total=480",
+  "sourcesUsed": ["showhn", "hn_best", "lobsters", "producthunt", "techcrunch_ai", "last_week_in_ai", "tmtpost", "ifanr", "sspai", "cyzone", "weiyangx", "ai_bot_projects"],
+  "verification": {
+    "method": "curl + regex 提取 title/og:description 验证站点真实性",
+    "verifiedUrls": [
+      "https://www.manhwaai.net",
+      "https://velokey.ai",
+      "https://staunchapps.com/launch/",
+      "https://flowiseai.com/sunset"
+    ],
+    "verifiedAt": "2026-08-06"
+  },
+  "projects": [
+    {
+      "title": "Manhwa AI：AI 网漫生成器（角色一致性）",
+      "slug": "2026-08-06-manhwa-ai",
+      "source": "Hacker News Show HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=49163839",
+      "feasibility": 4,
+      "category": "AI工具"
+    },
+    {
+      "title": "Velokey：统一 AI 视频 API 网关",
+      "slug": "2026-08-06-velokey",
+      "source": "Hacker News Show HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=49163659",
+      "feasibility": 4,
+      "category": "开发者工具"
+    },
+    {
+      "title": "Launch：Mac 脚本启动器（$12 买断）",
+      "slug": "2026-08-06-launch-mac-script-launcher",
+      "source": "Hacker News Show HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=49162808",
+      "feasibility": 3,
+      "category": "独立开发"
+    },
+    {
+      "title": "Flowise 关停 → 低代码 AI 工作流迁移服务",
+      "slug": "2026-08-06-flowise-migration-service",
+      "source": "Hacker News Front Page + Flowise 官方公告",
+      "sourceUrl": "https://flowiseai.com/sunset",
+      "feasibility": 5,
+      "category": "服务"
+    }
+  ],
+  "notes": "首日收集。从 480 条原始信号中筛选出 4 个可验证的真实项目：3 个产品型 + 1 个信号型商机。所有出处 URL 均已 curl 验证可访问。"
+}
