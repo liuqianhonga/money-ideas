@@ -17,10 +17,16 @@
 | `paybackPeriod` | 变现周期 | 1-2 个月 |
 | `investment` | 投入成本 | 前期 ¥2000 设备+素材 |
 | `feasibility` | 可行性评分 1-5 | 4 |
+| `effortScore` | 实施难度 1-5（1=易做 5=难做） | 2 |
+| `barrierScore` | 门槛 1-5（1=低门槛 5=高门槛） | 2 |
+| `monetizationEase` | 变现难易 1-5（5=极易变现） | 4 |
 | `source` | 出处名称 | Hacker News Show HN |
 | `sourceUrl` | 出处链接（可验证） | https://news.ycombinator.com/item?id=... |
 | `summary` | 一句话摘要 | 用 AI 给宠物做写真，本地服务 |
 | `tags` | 标签数组 | [AI, 摄影, 本地服务] |
+
+> **信心指数（confidence）**：由 `effortScore`/`barrierScore`/`monetizationEase` 三个子维度自动合成 0-100（权重 变现40% + 难度30% + 门槛30%），无需手写。计算逻辑见 `references/confidence-score.md`。
+> 新项目**必须填写**三维评分字段，否则指数默认按中间值 3 计算。
 
 ## 正文内容要求
 
