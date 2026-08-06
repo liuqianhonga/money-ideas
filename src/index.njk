@@ -19,67 +19,87 @@
       </nav>
     </header>
 
-    <main>
-      <!-- 筛选栏 -->
-      <section class="filter-panel" id="filterPanel">
-        <div class="filter-row">
-          <div class="filter-label">🏷️ 标签</div>
+    <!-- 左右布局：左侧筛选 + 右侧列表 -->
+    <div class="layout">
+      <aside class="sidebar" id="sidebar">
+        <div class="filter-panel">
+          <div class="filter-title">🏷️ 标签筛选</div>
           <div class="filter-chips" id="tagFilter">
             <button class="chip active" data-tag="all">全部</button>
             {% for tag in collections.allTags %}
             <button class="chip" data-tag="{{ tag }}">{{ tag }}</button>
             {% endfor %}
           </div>
-        </div>
-        <div class="filter-row">
-          <div class="filter-label">📊 信心指数</div>
+
+          <div class="filter-title">📊 信心指数</div>
           <div class="filter-chips" id="confidenceFilter">
             <button class="chip active" data-conf="all">全部</button>
             <button class="chip" data-conf="80">🔥 极佳 (80+)</button>
             <button class="chip" data-conf="60">✅ 良好 (60+)</button>
             <button class="chip" data-conf="40">⚠️ 一般 (40+)</button>
           </div>
+
           <div class="filter-count" id="filterCount"></div>
         </div>
-      </section>
+      </aside>
 
-      <div class="day-group" id="projectList">
-        {% set grouped = collections.projects | groupByDate %}
-        {% for day in grouped %}
-        <div class="day-group" data-day="{{ day.date }}">
-          <div class="date" style="color: var(--accent); font-weight: 700; margin: 24px 0 12px; font-size: 1.05rem;">
-            📅 {{ day.date }} · <span class="day-count">{{ day.items.length }}</span> 个项目
-          </div>
-          {% for item in day.items %}
-          {% set conf = item.data | confidence %}
-          <div class="card project-card"
-               data-tags="{{ item.data.tags | join(',') }}"
-               data-conf="{{ conf }}">
-            <div class="date">{{ item.date | dateDisplay }}</div>
-            <h2><a href="{{ item.url }}">{{ item.data.title }}</a></h2>
-            <div class="badges">
-              {% if item.data.category %}<span class="badge">{{ item.data.category }}</span>{% endif %}
-              {% if item.data.businessModel %}<span class="badge blue">{{ item.data.businessModel }}</span>{% endif %}
-              {% if item.data.feasibility >= 4 %}<span class="badge hot">🔥 可行性 {{ item.data.feasibility }}/5</span>{% else %}<span class="badge">可行性 {{ item.data.feasibility }}/5</span>{% endif %}
-              {% if conf >= 80 %}<span class="badge hot">💯 信心 {{ conf }} · 极佳</span>{% elif conf >= 60 %}<span class="badge green">✅ 信心 {{ conf }} · 良好</span>{% elif conf >= 40 %}<span class="badge blue">⚠️ 信心 {{ conf }} · 一般</span>{% else %}<span class="badge">❌ 信心 {{ conf }} · 谨慎</span>{% endif %}
+      <main class="main-content">
+        <div class="day-group" id="projectList">
+          {% set grouped = collections.projects | groupByDate %}
+          {% for day in grouped %}
+          <div class="day-group" data-day="{{ day.date }}">
+            <div class="date" style="color: var(--accent); font-weight: 700; margin: 8px 0 12px; font-size: 1.05rem;">
+              📅 {{ day.date }} · <span class="day-count">{{ day.items.length }}</span> 个项目
             </div>
-            <div class="tags-line">
-              {% for tag in item.data.tags %}<span class="tag-mini">{{ tag }}</span>{% endfor %}
+            {% for item in day.items %}
+            {% set conf = item.data | confidence %}
+            <div class="card project-card"
+                 data-tags="{{ item.data.tags | join(',') }}"
+                 data-conf="{{ conf }}"
+                 data-url="{{ item.url }}"
+                 role="button"
+                 tabindex="0"
+                 aria-label="查看详情：{{ item.data.title }}">
+              <div class="date">{{ item.date | dateDisplay }}</div>
+              <h2>{{ item.data.title }}</h2>
+              <div class="badges">
+                {% if item.data.category %}<span class="badge">{{ item.data.category }}</span>{% endif %}
+                {% if item.data.businessModel %}<span class="badge blue">{{ item.data.businessModel }}</span>{% endif %}
+                {% if item.data.feasibility >= 4 %}<span class="badge hot">🔥 可行性 {{ item.data.feasibility }}/5</span>{% else %}<span class="badge">可行性 {{ item.data.feasibility }}/5</span>{% endif %}
+                {% if conf >= 80 %}<span class="badge hot">💯 信心 {{ conf }} · 极佳</span>{% elif conf >= 60 %}<span class="badge green">✅ 信心 {{ conf }} · 良好</span>{% elif conf >= 40 %}<span class="badge blue">⚠️ 信心 {{ conf }} · 一般</span>{% else %}<span class="badge">❌ 信心 {{ conf }} · 谨慎</span>{% endif %}
+              </div>
+              <div class="tags-line">
+                {% for tag in item.data.tags %}<span class="tag-mini">{{ tag }}</span>{% endfor %}
+              </div>
+              <p class="summary">{{ item.data.summary }}</p>
+              <div class="card-hint">点击查看详情 →</div>
             </div>
-            <p class="summary">{{ item.data.summary }}</p>
+            {% endfor %}
           </div>
           {% endfor %}
         </div>
-        {% endfor %}
-      </div>
-      <div class="empty-state" id="emptyState" style="display:none; text-align:center; padding:60px 0; color: var(--muted);">
-        😢 没有符合筛选条件的项目，试试放宽筛选吧～
-      </div>
-    </main>
+        <div class="empty-state" id="emptyState" style="display:none; text-align:center; padding:60px 0; color: var(--muted);">
+          😢 没有符合筛选条件的项目，试试放宽筛选吧～
+        </div>
+      </main>
+    </div>
 
     <footer class="site-footer">
       <p>{{ site.title }} · 每日更新 · 所有项目均注明出处，可回溯验证</p>
     </footer>
+  </div>
+
+  <!-- 右侧滑出详情层 -->
+  <div class="detail-overlay" id="detailOverlay" aria-hidden="true">
+    <div class="detail-panel" id="detailPanel" role="dialog" aria-modal="true">
+      <div class="detail-bar">
+        <button class="detail-close" id="detailClose" aria-label="关闭详情">✕</button>
+        <a class="detail-open" id="detailOpen" target="_blank" rel="noopener">在新窗口打开 ↗</a>
+      </div>
+      <div class="detail-content" id="detailContent">
+        <div class="detail-loading">⏳ 加载中…</div>
+      </div>
+    </div>
   </div>
 
   <script>
@@ -94,6 +114,7 @@
     let activeTag = 'all';
     let activeConf = 'all';
 
+    /* ---------- 筛选 ---------- */
     function applyFilter() {
       let visible = 0;
       cards.forEach((card) => {
@@ -106,7 +127,6 @@
         if (show) visible++;
       });
 
-      // 更新日期分组标题计数（仅统计可见卡片）
       dayGroups.forEach((group) => {
         let dayVisible = 0;
         group.querySelectorAll('.project-card').forEach((c) => {
@@ -140,6 +160,79 @@
     });
 
     applyFilter();
+
+    /* ---------- 右侧滑出详情 ---------- */
+    const overlay = document.getElementById('detailOverlay');
+    const panel = document.getElementById('detailPanel');
+    const content = document.getElementById('detailContent');
+    const closeBtn = document.getElementById('detailClose');
+    const openLink = document.getElementById('detailOpen');
+
+    function openDetail(url, title) {
+      openLink.href = url;
+      openLink.textContent = '在新窗口打开 ↗';
+
+      // 显示遮罩 + 滑入动画
+      overlay.classList.add('open');
+      document.body.classList.add('no-scroll');
+
+      // 先显示加载态，再 fetch 详情
+      content.innerHTML = '<div class="detail-loading">⏳ 加载中…</div>';
+      fetch(url)
+        .then((res) => {
+          if (!res.ok) throw new Error('HTTP ' + res.status);
+          return res.text();
+        })
+        .then((html) => {
+          const doc = new DOMParser().parseFromString(html, 'text/html');
+          const header = doc.querySelector('.article-header');
+          const confCard = doc.querySelector('.confidence-card');
+          const body = doc.querySelector('.article-body');
+          let frag = '';
+          if (header) frag += header.outerHTML;
+          if (confCard) frag += confCard.outerHTML;
+          if (body) frag += body.outerHTML;
+          if (!frag) {
+            // 兜底：抓 title + 主体文本
+            const h = doc.querySelector('h1');
+            const main = doc.querySelector('main, article, .container');
+            frag = '<h1>' + (h ? h.textContent : title) + '</h1>' +
+                   (main ? main.innerHTML : '');
+          }
+          content.innerHTML = frag || '<p class="detail-loading">暂无内容</p>';
+        })
+        .catch((err) => {
+          content.innerHTML = '<p class="detail-loading">😢 加载失败：' + err.message + '<br>请点击右上角在新窗口打开。</p>';
+        });
+    }
+
+    function closeDetail() {
+      overlay.classList.remove('open');
+      document.body.classList.remove('no-scroll');
+    }
+
+    // 卡片点击 → 滑出详情
+    cards.forEach((card) => {
+      card.addEventListener('click', (e) => {
+        // 阻止点击内部链接时触发（虽然卡片 h2 已不是链接）
+        e.preventDefault();
+        openDetail(card.dataset.url, card.querySelector('h2')?.textContent || '');
+      });
+      card.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          openDetail(card.dataset.url, card.querySelector('h2')?.textContent || '');
+        }
+      });
+    });
+
+    closeBtn.addEventListener('click', closeDetail);
+    overlay.addEventListener('click', (e) => {
+      if (e.target === overlay) closeDetail();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeDetail();
+    });
   })();
   </script>
 </body>
