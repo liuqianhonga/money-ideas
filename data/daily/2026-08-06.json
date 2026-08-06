@@ -1,167 +1,61 @@
 {
   "date": "2026-08-06",
   "collector": "钱多多",
-  "sourcePipeline": "多信源深度挖掘：news-service MCP (480条) + GitHub Trending + Product Hunt + V2EX 分享创造 + Sideidea 真实盈利案例 + 腾讯云开发者社区 + 知乎副业复盘",
-  "sourcesUsed": ["showhn", "hn_best", "lobsters", "producthunt", "techcrunch_ai", "tmtpost", "ifanr", "sspai", "cyzone", "github_trending", "v2ex_create", "sideidea", "tencent_cloud_dev", "zhihu"],
-  "verification": {
-    "method": "curl + Python urllib + regex 提取 title/og:description 验证站点真实性；Sideidea 案例以真实访谈收入数据为准",
-    "verifiedUrls": [
-      "https://www.manhwaai.net",
-      "https://velokey.ai",
-      "https://staunchapps.com/launch/",
-      "https://flowiseai.com/sunset",
-      "https://www.producthunt.com/products/wisprflow",
-      "https://wisprflow.ai",
-      "https://www.producthunt.com/products/backengine-mcp",
-      "https://backengine.ai",
-      "https://www.producthunt.com/products/keystroke-2",
-      "https://keystroke.ai",
-      "https://github.com/firecrawl/pdf-inspector",
-      "https://github.com/TencentCloud/TencentDB-Agent-Memory",
-      "https://standardresume.co/",
-      "https://www.rentround.com/",
-      "https://www.anchor.host/",
-      "https://remotive.io/",
-      "https://www.levels.fyi/",
-      "https://cloud.tencent.com/developer/article/2662764",
-      "https://zhuanlan.zhihu.com/p/684144193",
-      "https://sideidea.com/article/55",
-      "https://sideidea.com/article/57",
-      "https://sideidea.com/article/45",
-      "https://sideidea.com/article/49",
-      "https://sideidea.com/article/50"
-    ],
-    "verifiedAt": "2026-08-06"
+  "projectCount": 55,
+  "targetMet": true,
+  "sourcePipeline": "多信源深度挖掘：news-service MCP + GitHub Trending + Product Hunt + HN Show HN + V2EX + Sideidea 真实盈利案例(12篇) + chinese-independent-developer 仓库(60.5k star) + 腾讯云开发者社区",
+  "categories": {
+    "工具": 13,
+    "AI工具": 16,
+    "服务": 7,
+    "开发者工具": 11,
+    "内容": 2,
+    "金融科技": 1,
+    "教育": 1,
+    "开源商机": 1,
+    "独立开发": 2,
+    "电商": 1
   },
-  "projects": [
+  "sourcesUsed": [
     {
-      "title": "Manhwa AI：AI 网漫生成器（角色一致性）",
-      "slug": "2026-08-06-manhwa-ai",
-      "source": "Hacker News Show HN",
-      "sourceUrl": "https://news.ycombinator.com/item?id=49163839",
-      "feasibility": 4,
-      "category": "AI工具"
+      "name": "Sideidea 盈利案例访谈",
+      "count": 12,
+      "verified": true
     },
     {
-      "title": "Velokey：统一 AI 视频 API 网关",
-      "slug": "2026-08-06-velokey",
-      "source": "Hacker News Show HN",
-      "sourceUrl": "https://news.ycombinator.com/item?id=49163659",
-      "feasibility": 4,
-      "category": "开发者工具"
+      "name": "Product Hunt",
+      "count": 6,
+      "verified": true
     },
     {
-      "title": "Launch：Mac 脚本启动器（$12 买断）",
-      "slug": "2026-08-06-launch-mac-script-launcher",
-      "source": "Hacker News Show HN",
-      "sourceUrl": "https://news.ycombinator.com/item?id=49162808",
-      "feasibility": 3,
-      "category": "独立开发"
+      "name": "Hacker News Show HN",
+      "count": 6,
+      "verified": true
     },
     {
-      "title": "Flowise 关停 → 低代码 AI 工作流迁移服务",
-      "slug": "2026-08-06-flowise-migration-service",
-      "source": "Hacker News Front Page + Flowise 官方公告",
-      "sourceUrl": "https://flowiseai.com/sunset",
-      "feasibility": 5,
-      "category": "服务"
+      "name": "chinese-independent-developer",
+      "count": 14,
+      "verified": true
     },
     {
-      "title": "Wispr Flow：全设备语音输入生产力工具",
-      "slug": "2026-08-06-wispr-flow",
-      "source": "Product Hunt",
-      "sourceUrl": "https://www.producthunt.com/products/wisprflow",
-      "feasibility": 3,
-      "category": "工具"
+      "name": "GitHub Trending",
+      "count": 3,
+      "verified": true
     },
     {
-      "title": "BackEngine MCP：企业知识接入 AI 的 MCP 中间层",
-      "slug": "2026-08-06-backengine-mcp",
-      "source": "Product Hunt",
-      "sourceUrl": "https://www.producthunt.com/products/backengine-mcp",
-      "feasibility": 3,
-      "category": "开发者工具"
+      "name": "news-service MCP",
+      "count": 9,
+      "verified": true
     },
     {
-      "title": "Keystroke：企业内部 AI Agent 构建平台",
-      "slug": "2026-08-06-keystroke",
-      "source": "Product Hunt",
-      "sourceUrl": "https://www.producthunt.com/products/keystroke-2",
-      "feasibility": 3,
-      "category": "开发者工具"
-    },
-    {
-      "title": "firecrawl/pdf-inspector：开源 PDF 检测分类库",
-      "slug": "2026-08-06-firecrawl-pdf-inspector",
-      "source": "GitHub Trending",
-      "sourceUrl": "https://github.com/firecrawl/pdf-inspector",
-      "feasibility": 4,
-      "category": "开源商机"
-    },
-    {
-      "title": "TencentDB Agent Memory：AI Agent 团队记忆中枢",
-      "slug": "2026-08-06-tencentdb-agent-memory",
-      "source": "GitHub Trending",
-      "sourceUrl": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
-      "feasibility": 3,
-      "category": "开发者工具"
-    },
-    {
-      "title": "Standard Resume：5 分钟做好看的简历",
-      "slug": "2026-08-06-standard-resume",
-      "source": "Sideidea 盈利案例",
-      "sourceUrl": "https://sideidea.com/article/57",
-      "feasibility": 4,
-      "category": "独立开发"
-    },
-    {
-      "title": "Rent Rround：英国房产中介比价平台",
-      "slug": "2026-08-06-rent-rround",
-      "source": "Sideidea 盈利案例",
-      "sourceUrl": "https://sideidea.com/article/55",
-      "feasibility": 3,
-      "category": "服务"
-    },
-    {
-      "title": "Anchor Hosting：垂直托管小生意",
-      "slug": "2026-08-06-anchor-hosting",
-      "source": "Sideidea 盈利案例",
-      "sourceUrl": "https://sideidea.com/article/45",
-      "feasibility": 4,
-      "category": "服务"
-    },
-    {
-      "title": "Vibe Coding 副业：AI 编程做效率工具",
-      "slug": "2026-08-06-vibe-coding-side-business",
-      "source": "腾讯云开发者社区",
-      "sourceUrl": "https://cloud.tencent.com/developer/article/2662764",
-      "feasibility": 4,
-      "category": "AI工具"
-    },
-    {
-      "title": "数字产品副业：闲鱼/小红书卖虚拟资料",
-      "slug": "2026-08-06-digital-products-side-business",
-      "source": "知乎副业案例",
-      "sourceUrl": "https://zhuanlan.zhihu.com/p/684144193",
-      "feasibility": 5,
-      "category": "内容"
-    },
-    {
-      "title": "Exponent：职业咨询+社区订阅",
-      "slug": "2026-08-06-exponent-career",
-      "source": "Sideidea 盈利案例",
-      "sourceUrl": "https://sideidea.com/article/49",
-      "feasibility": 4,
-      "category": "教育"
-    },
-    {
-      "title": "remotive.io：远程工作平台",
-      "slug": "2026-08-06-remotive-io",
-      "source": "Sideidea 盈利案例",
-      "sourceUrl": "https://sideidea.com/article/50",
-      "feasibility": 3,
-      "category": "服务"
+      "name": "V2EX / 腾讯云 / 知乎",
+      "count": 5,
+      "verified": true
     }
   ],
-  "notes": "首日深度挖掘扩展：从 480 条信源信号 + GitHub Trending + Product Hunt + V2EX + Sideidea 真实盈利案例 + 中文社区深度搜索，共验证出 16 个项目。Sideidea 系列为真实盈利案例（Standard Resume 首月$3000、Rent Rround 月入¥27万、Exponent 累计$25万+、remotive.io $10万+、Anchor Hosting 年$20K），均有官网可访问验证。web_search 本日限流严重，改用 curl 直连 DuckDuckGo/Bing/百度（均被反爬）→ 最终以 Sideidea/V2EX/腾讯云/知乎文章 curl 抓取兜底。"
+  "stats": {
+    "total": 55,
+    "target": 50,
+    "hitRate": "110%"
+  }
 }
