@@ -1,0 +1,60 @@
+{
+  "date": "2026-08-07",
+  "collector": "钱多多",
+  "sourcePipeline": "MCP biz_opportunity since_hours=48 take=40 + GitHub Trending + GitHub API 新建仓库 + V2EX 分享创造 + chinese-independent-developer 仓库",
+  "sourcesUsed": [
+    "V2EX 分享创造",
+    "GitHub Trending / GitHub API",
+    "chinese-independent-developer",
+    "news-service MCP (biz_opportunity)"
+  ],
+  "verification": {
+    "method": "curl+regex / web_extract",
+    "verifiedUrls": [
+      "https://agenmatic.ai/",
+      "https://github.com/KKKKhazix/human-writing",
+      "https://github.com/firecrawl/anydoc",
+      "https://pigfetch.com"
+    ],
+    "verifiedAt": "2026-08-07"
+  },
+  "projects": [
+    {
+      "title": "Agenmatic（AI 潜在客户雷达）",
+      "slug": "agenmatic",
+      "source": "V2EX",
+      "sourceUrl": "https://agenmatic.ai/",
+      "feasibility": 3,
+      "category": "工具",
+      "confidence": 55
+    },
+    {
+      "title": "活人感写作 Skill",
+      "slug": "human-writing-skill",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/KKKKhazix/human-writing",
+      "feasibility": 4,
+      "category": "内容",
+      "confidence": 75
+    },
+    {
+      "title": "anydoc 文档转 Markdown API",
+      "slug": "anydoc-api",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/firecrawl/anydoc",
+      "feasibility": 3,
+      "category": "工具",
+      "confidence": 55
+    },
+    {
+      "title": "PigFetch 视频下载工具",
+      "slug": "pigfetch",
+      "source": "chinese-independent-developer",
+      "sourceUrl": "https://pigfetch.com",
+      "feasibility": 3,
+      "category": "工具",
+      "confidence": 60
+    }
+  ],
+  "notes": "MCP biz_opportunity 今日以公众号宏观文章为主，可用信号少；深度挖掘 V2EX + GitHub Trending 获得 4 个高质量项目。human-writing 与 anydoc 均为 GitHub 高星新仓库（1500+/8300+ stars），真实可验证。"
+}
