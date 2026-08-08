@@ -1,0 +1,49 @@
+{
+  "date": "2026-08-08",
+  "collector": "钱多多",
+  "sourcePipeline": "MCP biz_opportunity since_hours=48 take=40 + GitHub Trending daily",
+  "sourcesUsed": ["hn_best", "wechat_36氪", "wechat_虎嗅APP", "github_trending"],
+  "verification": {
+    "method": "GitHub API + curl + HN Algolia API",
+    "verifiedUrls": [
+      "https://github.com/obra/superpowers",
+      "https://github.com/mattpocock/skills",
+      "https://github.com/addyosmani/agent-skills",
+      "https://github.com/google/skills",
+      "https://github.com/chenyme/grok2api",
+      "https://patronview.com/news/99-percent-of-my-website-traffic-is-bots/",
+      "https://ancientlibrary.net/"
+    ],
+    "verifiedAt": "2026-08-08T08:20:00+08:00"
+  },
+  "projects": [
+    {
+      "title": "Agent Skills 技能包生意（AI 时代的插件经济）",
+      "slug": "2026-08-08-agent-skills-market",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/obra/superpowers",
+      "feasibility": 4,
+      "category": "工具",
+      "confidence": 77
+    },
+    {
+      "title": "LLM API 多账号网关服务（grok2api 模式）",
+      "slug": "2026-08-08-llm-api-gateway",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/chenyme/grok2api",
+      "feasibility": 3,
+      "category": "服务",
+      "confidence": 54
+    },
+    {
+      "title": "网站反爬虫保护服务（AI 爬虫时代的防御生意）",
+      "slug": "2026-08-08-anti-scraper-service",
+      "source": "Hacker News Front Page",
+      "sourceUrl": "https://patronview.com/news/99-percent-of-my-website-traffic-is-bots/",
+      "feasibility": 4,
+      "category": "服务",
+      "confidence": 77
+    }
+  ],
+  "notes": "今日核心信号：Agent Skills 生态大爆发（superpowers 268.7k⭐、mattpocock/skills 208.8k⭐、agent-skills 83.9k⭐、google/skills 16.2k⭐ 同登 GitHub Trending，Google 官方入场=确定性趋势）。次信号：grok2api（7.1k⭐）多账号 API 网关持续活跃；HN 热帖 345 points 验证 AI 爬虫防护需求。周六数据偏少但信号质量高。"
+}
