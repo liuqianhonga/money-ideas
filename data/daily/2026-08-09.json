@@ -1,0 +1,14 @@
+{
+  "date": "2026-08-09",
+  "collector": "钱多多",
+  "sourcePipeline": "MCP biz_opportunity since_hours=48 take=40 + GitHub Trending + Sideidea",
+  "sourcesUsed": ["hn_best", "producthunt", "sspai", "github-trending", "sideidea"],
+  "verification": {"method": "curl+regex title check", "verifiedUrls": ["https://screenshotapi.net/", "https://github.com/andrewpollack/linkedin-feed-blocker", "https://ancientlibrary.net/", "https://specification.website/spec/foundations/for-sale-dns/"], "verifiedAt": "2026-08-09T08:30:00+08:00"},
+  "projects": [
+    {"title": "网页截图 API 服务（ScreenshotAPI 真实盈利案例）", "slug": "2026-08-09-screenshot-api-saas", "source": "Sideidea", "sourceUrl": "https://screenshotapi.net/", "feasibility": 4, "category": "工具"},
+    {"title": "LinkedIn Feed Blocker（社交信息流屏蔽工具）", "slug": "2026-08-09-linkedin-feed-blocker", "source": "Hacker News Front Page", "sourceUrl": "https://github.com/andrewpollack/linkedin-feed-blocker", "feasibility": 3, "category": "工具"},
+    {"title": "经典文献解析阅读器（Ancient Library 模式）", "slug": "2026-08-09-ancient-library-reader", "source": "Hacker News Front Page", "sourceUrl": "https://ancientlibrary.net/", "feasibility": 3, "category": "教育"},
+    {"title": "域名待售 DNS 信号服务（_for-sale 新标准商机）", "slug": "2026-08-09-dns-forsale-service", "source": "Hacker News Front Page", "sourceUrl": "https://specification.website/spec/foundations/for-sale-dns/", "feasibility": 4, "category": "服务"}
+  ],
+  "notes": "周日数据量偏少（HN 多为技术帖），GitHub Trending 有 ChinaTextbook（PDF 教材版权风险大，排除）、TradingAgents（金融框架，与招财喵相关未收录）、agent-skills（与 08-08 已收录项目重复，排除）。筛选后保留 4 个高质量项目：1 个真实盈利案例（ScreenshotAPI $420/MRR）+ 2 个 HN 热帖工具 + 1 个新标准信号型商机（RFC 10023 域名待售 DNS）。所有 URL 均 curl 验证 HTTP 200。"
+}
