@@ -1,0 +1,33 @@
+---
+layout: base.njk
+title: 信号流存档
+permalink: /signals/
+---
+
+<h1 style="font-size: 1.5rem; margin-bottom: 8px;">📡 副业灵感信号流</h1>
+<p style="color: var(--muted); margin-bottom: 20px;">
+  每日快报层的全部信号存档：独立项目、AI 工具、开源商机、国内灵感——不止深度项目，所有发现都留档可检索。
+</p>
+
+{% set grouped = collections.signals | groupByDate %}
+{% if grouped.length %}
+{% for day in grouped %}
+<div class="archives-year">
+  <h2>📅 {{ day.date }}（{{ day.items[0].data.signals.length }} 条信号）</h2>
+  {% for signal in day.items[0].data.signals %}
+  <div class="signal-entry">
+    {% if signal.category %}<span class="signal-cat signal-cat-{{ signal.category | replace(' ', '-') }}">{{ signal.category }}</span>{% endif %}
+    <h3>{{ signal.title }}</h3>
+    {% if signal.summary %}<p class="signal-summary">{{ signal.summary }}</p>{% endif %}
+    <p class="signal-meta">
+      {% if signal.replicable %}<span class="signal-replicable">{{ signal.replicable }}</span>{% endif %}
+      {% if signal.source %}<span class="signal-source">来源：{{ signal.source }}</span>{% endif %}
+      {% if signal.sourceUrl %}<a href="{{ signal.sourceUrl }}" target="_blank" rel="noopener">原文 →</a>{% endif %}
+    </p>
+  </div>
+  {% endfor %}
+</div>
+{% endfor %}
+{% else %}
+<p style="color: var(--muted);">还没有信号存档。从今天开始，每日快报的信号会出现在这里。</p>
+{% endif %}

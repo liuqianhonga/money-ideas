@@ -12,6 +12,13 @@ module.exports = function (eleventyConfig) {
       .sort((a, b) => (a.data.date < b.data.date ? 1 : -1));
   });
 
+  // 信号流 collection：按日期倒序（快报信号存档）
+  eleventyConfig.addCollection("signals", function (collectionApi) {
+    return collectionApi
+      .getFilteredByGlob("src/signals/*.md")
+      .sort((a, b) => (a.data.date < b.data.date ? 1 : -1));
+  });
+
   // 全部标签聚合（去重，用于首页筛选栏）
   eleventyConfig.addCollection("allTags", function (collectionApi) {
     const tags = new Set();
