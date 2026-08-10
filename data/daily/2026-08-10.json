@@ -1,0 +1,14 @@
+{
+  "date": "2026-08-10",
+  "collector": "钱多多",
+  "sourcePipeline": "MCP biz_opportunity since_hours=48 take=40 + producthunt/ai_bot_projects providers + GitHub Trending + HN Front Page",
+  "sourcesUsed": ["hn_best", "producthunt", "ai_bot_projects", "huxiu", "wechat_36氪", "github-trending"],
+  "verification": {"method": "curl+regex title check", "verifiedUrls": ["https://marketnow.site/", "https://www.producthunt.com/products/soup-cli", "https://duckdisk.com/", "https://www.producthunt.com/products/workflo-2", "https://airy.so", "https://github.com/PrimeIntellect-ai/prime-agent"], "verifiedAt": "2026-08-10T08:45:00+08:00"},
+  "projects": [
+    {"title": "MCP 服务器分发与安全审计市场（MarketNow 模式）", "slug": "2026-08-10-mcp-marketplace", "source": "Hacker News Front Page", "sourceUrl": "https://marketnow.site/", "feasibility": 4, "category": "工具"},
+    {"title": "Soup CLI（4GB 显存微调 8B LLM）", "slug": "2026-08-10-soup-cli-4gb-finetune", "source": "Product Hunt", "sourceUrl": "https://www.producthunt.com/products/soup-cli", "feasibility": 4, "category": "工具"},
+    {"title": "DuckDisk（WizTree 式 macOS 存储分析）", "slug": "2026-08-10-duckdisk-macos-storage", "source": "Product Hunt", "sourceUrl": "https://duckdisk.com/", "feasibility": 4, "category": "工具"},
+    {"title": "Workflo（不读屏的 Mac 工作区自动化）", "slug": "2026-08-10-workflo-mac-automation", "source": "Product Hunt", "sourceUrl": "https://www.producthunt.com/products/workflo-2", "feasibility": 4, "category": "工具"}
+  ],
+  "notes": "周一数据充足（207 条总量，40 条采样）。HN 侧亮点：MarketNow（MCP 服务器分发市场，9248 个 MCP servers，npm for MCP 定位）、Show HN Airy（语音内容创作）。Product Hunt 侧亮点：Soup CLI（4GB 显存微调 8B LLM，119.6 tok/s 实测）、DuckDisk（WizTree 式 macOS 存储分析，免费开源）、Workflo（不读屏的 Mac 自动化，隐私卖点）、Argos（浏览器 AI 代理）、VoiceOS（语音工作流）。GitHub Trending：PrimeIntellect-ai/prime-agent（自我改进 RLM 编码 agent）、google/skills（Agent Skills 生态，与 08-08 agent-skills 主题相关未重复收录）、ZhuLinsen/daily_stock_analysis（LLM 股票分析，与招财喵域重叠未收录）。微信侧（虎嗅/36氪）多宏观行业内容按黑名单过滤。筛选后保留 4 个深度项目，均 curl 验证 HTTP 200。"
+}
