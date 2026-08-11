@@ -1,0 +1,14 @@
+{
+  "date": "2026-08-11",
+  "collector": "钱多多",
+  "sourcePipeline": "MCP biz_opportunity since_hours=48 take=40 + GitHub Trending + Sideidea",
+  "sourcesUsed": ["hn_best", "github-trending", "sideidea"],
+  "verification": {"method": "curl+regex title check", "verifiedUrls": ["https://www.whodunnitai.com/", "https://cactuscompute.com/needle", "https://bobdahacker.com/blog/tldv-hack", "https://www.stoaexchange.com", "https://www.docker.com/products/docker-sandboxes/", "https://airy.so", "https://github.com/NanmiCoder/MediaCrawler", "https://github.com/addyosmani/agent-skills"], "verifiedAt": "2026-08-11T09:50:00+08:00"},
+  "projects": [
+    {"title": "WhoDunnitAI（语音审讯 AI 嫌疑人推理游戏）", "slug": "2026-08-11-whodunnitai-voice-game", "source": "Show HN", "sourceUrl": "https://news.ycombinator.com/item?id=49238851", "feasibility": 4, "category": "工具"},
+    {"title": "Needle2 边缘 AI 服务（14MB agentic LLM 部署/微调）", "slug": "2026-08-11-needle2-edge-ai-service", "source": "Show HN", "sourceUrl": "https://news.ycombinator.com/item?id=49246804", "feasibility": 4, "category": "工具"},
+    {"title": "AI 会议记录安全审计服务（tl;dv 泄露 18.1 万会议记录教训）", "slug": "2026-08-11-ai-meeting-security-audit", "source": "Hacker News", "sourceUrl": "https://bobdahacker.com/blog/tldv-hack", "feasibility": 4, "category": "服务"},
+    {"title": "社媒数据采集服务（MediaCrawler ⭐61k 变现）", "slug": "2026-08-11-mediacrawler-data-service", "source": "GitHub Trending", "sourceUrl": "https://github.com/NanmiCoder/MediaCrawler", "feasibility": 3, "category": "服务"}
+  ],
+  "notes": "周二数据 286 条总量、40 条采样（HN 为主）。今日亮点：① Show HN WhoDunnitAI（语音审讯 AI 嫌疑人推理游戏，gpt-realtime 驱动，136 分验证 AI 互动娱乐新品类）；② Show HN Needle2（14MB agentic LLM，树莓派 500 tok/s，边缘 AI 部署外包）；③ tl;dv 泄露事件（AI 会议记录平台 Firestore 租户隔离漏洞，18.1 万条会议裸奔 6 个月未修复——衍生安全审计服务，需求教育已完成）；④ Launch HN Stoa Markets（YC S26 GPU 交易市场，首月 3 亿询价，门槛高仅信号）；⑤ GitHub Trending：agent-skills ⭐85k（08-08 已写市场，信号级）、firecrawl ⭐165k、TradingAgents ⭐97k（与招财喵域重叠）、MediaCrawler ⭐61k（社媒数据服务）。Docker Sandboxes、Meta Muse Glimmer 作为平台级信号。Sideidea 近期案例（Stencil Stop 月入 4 万美元、ScreenshotAPI）均为老案例，仅作参考未深度收录。全部 4 个深度项目 URL 已验证 HTTP 200。"
+}
