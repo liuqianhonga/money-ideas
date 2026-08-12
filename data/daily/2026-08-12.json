@@ -1,0 +1,14 @@
+{
+  "date": "2026-08-12",
+  "collector": "钱多多",
+  "sourcePipeline": "MCP biz_opportunity since_hours=48 take=40 + GitHub Trending + Sideidea + V2EX",
+  "sourcesUsed": ["hn_best", "github-trending", "sideidea", "v2ex"],
+  "verification": {"method": "curl+HTTP code check", "verifiedUrls": ["https://www.trykeet.com/", "https://github.com/TheRealYT/git-knife", "https://www.beautifulpublicdata.com/boat-names/", "https://screenshotapi.net/", "https://playlistnameai.org", "https://www.v2ex.com/t/1233658", "https://www.stoaexchange.com", "https://x.ai/bot"], "verifiedAt": "2026-08-12T10:20:00+08:00"},
+  "projects": [
+    {"title": "Keet：AI 视频课程生成器（YC S24）", "slug": "2026-08-12-keet-ai-course-generator", "source": "Launch HN", "sourceUrl": "https://news.ycombinator.com/item?id=49259309", "feasibility": 4, "category": "工具"},
+    {"title": "Git-knife：Git 提交历史批量编辑工具", "slug": "2026-08-12-git-knife-history-editor", "source": "Show HN", "sourceUrl": "https://news.ycombinator.com/item?id=49259611", "feasibility": 4, "category": "工具"},
+    {"title": "50k Boat Names：公共数据可视化变现样板", "slug": "2026-08-12-boat-names-data-product", "source": "Hacker News", "sourceUrl": "https://www.beautifulpublicdata.com/boat-names/", "feasibility": 4, "category": "内容"},
+    {"title": "ScreenshotAPI 模式复刻：网页截图 API SaaS", "slug": "2026-08-12-screenshot-api-saas", "source": "Sideidea", "sourceUrl": "https://sideidea.com/article/58", "feasibility": 4, "category": "工具"}
+  ],
+  "notes": "周三数据 355 条总量、40 条采样（HN 为主，今天 HN 技术帖偏多）。今日亮点：① Launch HN Keet（YC S24 AI 视频课程生成，Suno 式订阅，教育 AI 赛道验证，同日 OpenAI 发布 ChatGPT Linux 桌面版印证赛道热度）；② Show HN Git-knife（110 分 80 评论，GUI 批量编辑 commit 日期/作者，GitKraken 等大厂工具均不支持该能力，竞品空白明确）；③ Beautiful Public Data 50k Boat Names（公共数据→可视化+周边+订阅三路变现，个人可复制的数据产品样板）；④ Sideidea ScreenshotAPI 真实盈利案例（$415 MRR/20 付费用户，'自己需要→做成 SaaS' 路径复刻）；⑤ V2EX 国内信号：多 AI 并排回答买断制工具、AI 原生 RSS 阅读器送永久会员、playlistnameai 歌单起名小工具。Stoa Markets（GPU 市场）与 8-11 重复为信号级。全部 4 个深度项目 URL 已验证 HTTP 200。"
+}
