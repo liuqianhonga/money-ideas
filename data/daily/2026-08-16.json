@@ -1,0 +1,14 @@
+{
+  "date": "2026-08-16",
+  "collector": "钱多多",
+  "sourcePipeline": "MCP biz_opportunity since_hours=48 take=40 + GitHub Trending + Product Hunt(72h) + 国内信源(36kr/huxiu/sspai)",
+  "sourcesUsed": ["hn_best", "github-trending", "producthunt", "sspai", "huxiu", "tmtpost"],
+  "verification": {"method": "curl+title/og 验证", "verifiedUrls": ["https://github.com/HKUDS/CLI-Anything", "https://clianything.cc/", "https://www.whatcable.uk/", "https://isolate.video/", "https://github.com/lajosdeme/mole", "https://hashagent.pages.dev/", "https://api-docs.deepseek.com/news/news260813/", "https://sspai.com/post/113434", "https://www.huxiu.com/article/4883406.html", "https://github.com/megadose/holehe"], "verifiedAt": "2026-08-16T08:30:00+08:00"},
+  "projects": [
+    {"title": "CLI-Anything/CLI-Hub：让所有软件 Agent 原生（⭐47k 开源金矿）", "slug": "2026-08-16-cli-anything-agent-service", "source": "GitHub Trending", "sourceUrl": "https://github.com/HKUDS/CLI-Anything", "feasibility": 4, "category": "工具"},
+    {"title": "WhatCable：USB-C 线材检测小工具（£9.99，硬件+软件样板）", "slug": "2026-08-16-whatcable-usb-c-detector", "source": "Hacker News", "sourceUrl": "https://www.whatcable.uk/", "feasibility": 3, "category": "工具"},
+    {"title": "isolate.video 模式：屏幕录制秒变产品视频的 AI 工具", "slug": "2026-08-16-isolate-video-ai-demo-maker", "source": "Product Hunt", "sourceUrl": "https://isolate.video/", "feasibility": 3, "category": "工具"},
+    {"title": "Mole 模式：带预算约束的终端 Deep Research Agent（开源转托管）", "slug": "2026-08-16-mole-research-agent-service", "source": "Show HN", "sourceUrl": "https://github.com/lajosdeme/mole", "feasibility": 4, "category": "工具"}
+  ],
+  "notes": "周日数据总量 278 条、HN 采样 40 条（技术帖偏多，HN 头条多被科技/健康新闻占据，Show HN 信号 4 条）。今日亮点：① GitHub Trending 榜首 CLI-Anything（⭐47k，港大开源'让所有软件 Agent 原生'+CLI-Hub 注册表，Agent 兼容层是企业刚需，个人可做封装服务变现）；② WhatCable（£9.99 USB-C 线材检测，被 Verge/ZDNet/9to5Mac 报道，硬件+软件小产品 MVP 样板，门槛中高但无直接竞品）；③ Product Hunt 新品 isolate.video（录屏→产品视频 AI 工具，SaaS 订阅，AI 视频编辑赛道差异化场景）；④ Show HN Mole（deep-research agent 带强制预算/引用验证/本地隐私三硬约束，开源转托管服务，戳中企业 Agent 信任痛点）；⑤ 国内信号：DeepSeek Harness 开源 Agent 框架+插件生态（少数派）、《牛来》出圈揭示'AI 时代活人感内容溢价'（成本<1万、单日票房80万+）；⑥ 平台变化：DeepSeek-V4-Pro GA+峰谷定价=成本优化服务机会；⑦ 信号存档 9 条全量留档 src/signals/2026-08-16.md。全部 4 个深度项目 URL 已验证 HTTP 200。"
+}
