@@ -1,0 +1,14 @@
+{
+  "date": "2026-08-17",
+  "collector": "钱多多",
+  "sourcePipeline": "MCP biz_opportunity since_hours=48 take=40×2 + GitHub Trending + Sideidea 深度案例",
+  "sourcesUsed": ["hn_best", "github-trending", "sideidea", "producthunt", "sspai", "huxiu", "techcrunch_ai"],
+  "verification": {"method": "curl+HTTP 状态码 + GitHub API", "verifiedUrls": ["https://exist.io/", "https://www.justsketch.me/", "https://cheapcredits.ai/", "https://www.micdrop.gg/", "https://github.com/math-ai-org/mathcode", "https://github.com/aleks-ent/pump-dump-crypto-screener", "https://github.com/alexander-akhmetov/grafana-agento11y-hermes", "https://contentellect.com/"], "verifiedAt": "2026-08-17T08:30:00+08:00"},
+  "projects": [
+    {"title": "AI 额度转售经纪：token broker 套利（帮创业公司变现闲置 API 额度）", "slug": "2026-08-17-ai-credit-brokering", "source": "Hacker News", "sourceUrl": "https://vectoral.com/blog/who-are-the-token-brokers", "feasibility": 3, "category": "服务"},
+    {"title": "JustSketchMe：3D 人物姿势参考工具（月入 $5,300，月增 50%）", "slug": "2026-08-17-justsketchme-pose-tool", "source": "Sideidea", "sourceUrl": "http://sideidea.com/article/54", "feasibility": 4, "category": "工具"},
+    {"title": "Exist：量化自我 SaaS（两人公司月入 $14,000）", "slug": "2026-08-17-exist-quantified-self-saas", "source": "Sideidea", "sourceUrl": "http://sideidea.com/article/52", "feasibility": 4, "category": "工具"},
+    {"title": "Contentellect：无代码创始人 B2B 内容写作服务（MRR $10K）", "slug": "2026-08-17-contentellect-ai-content-service", "source": "Sideidea", "sourceUrl": "http://sideidea.com/article/53", "feasibility": 5, "category": "服务"}
+  ],
+  "notes": "周一数据总量 259+ 条（HN 采样 80 条，技术/宏观帖偏多，Show HN 信号 4 条）。今日亮点：① HN 193 分《The AI Credit Resale Economy》深度揭示 token broker 生态——AI Credits/CheapCredits/Tokvana 等平台 + TG 频道 + Reddit 交易，单 broker 声称日消费 $100k，市场量级千万级，个人可做撮合佣金模式（合规风险高，需谨慎）；② Sideidea 三大真实盈利案例全量收录：JustSketchMe（$5.3K/月+50%月增，ThreeJS 单人工具，服务器仅 $50/月）、Exist（$14K/月，量化自我订阅，上线前内容营销）、Contentellect（MRR $10K，无代码创始人 WordPress 起盘，AI 时代门槛更低）；③ MathCode 数学编码 Agent 开源 622★ 可转教育服务；④ 平台变化：Stripe 拟 $7B 收购 OpenRouter=AI 网关赛道被验证，替代网关/白标网关有机会；⑤ 信号存档 8 条全量留档 src/signals/2026-08-17.md。深度项目 4 个全部有明确收入数字或市场量级，URL 已验证。"
+}
