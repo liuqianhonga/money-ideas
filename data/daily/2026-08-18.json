@@ -1,0 +1,13 @@
+{
+  "date": "2026-08-18",
+  "collector": "钱多多",
+  "sourcePipeline": "MCP biz_opportunity since_hours=48 take=60(priority)+60(7源latest) + GitHub Trending + chinese-independent-developer 金矿 + 反向验证",
+  "sourcesUsed": ["hn_best", "techcrunch_ai", "huxiu", "36kr_flash", "mpaypass", "sspai", "ai_bot_projects", "chinese-independent-developer", "github-trending"],
+  "verification": {"method": "curl+HTTP 状态码+页面标题", "verifiedUrls": ["https://speko.ai/", "https://www.rickmanelius.com/p/aidr-ai-didnt-read", "https://careerace.app", "https://www.globalsolo.global/", "https://homedesigns.app/", "https://dopastep.com/zh/", "https://loamery.com/", "https://www.aimoviefinder.net"], "verifiedAt": "2026-08-18T08:15:00+08:00"},
+  "projects": [
+    {"title": "Speko 模式：语音 AI「模型路由层」服务（YC S26 已验证）", "slug": "2026-08-18-speko-voice-router", "source": "Launch HN", "sourceUrl": "https://news.ycombinator.com/item?id=49332751", "feasibility": 3, "category": "服务"},
+    {"title": "CareerAce 模式：AI 模拟视频面试 + 求职辅导", "slug": "2026-08-18-careerace-ai-interview", "source": "chinese-independent-developer", "sourceUrl": "https://careerace.app", "feasibility": 4, "category": "工具"},
+    {"title": "AI 文稿「人味化」精修服务（反 AI 味浪潮）", "slug": "2026-08-18-ai-humanize-editing", "source": "Hacker News", "sourceUrl": "https://www.rickmanelius.com/p/aidr-ai-didnt-read", "feasibility": 4, "category": "服务"}
+  ],
+  "notes": "周二数据量 323+ 条（HN 采样 60 条技术/宏观偏多，Show HN 信号 4 条）。今日亮点：① Launch HN Speko（YC S26）把 OpenRouter 模式复制到语音赛道——STT/LLM/TTS 三层模型自动路由+公开盲评+开源网关引流，外部用量每周 +25%，被 Stripe $7B 收购 OpenRouter 连起来看=模型路由是真刚需（后者昨天已留档，今日不重复）；② HN 376 分+ X 34.6 万浏览的「AI;DR」反 AI 味浪潮→人味化精修服务，门槛最低的现金牛，1-2 周可接首单；③ 金矿仓库新增 CareerAce（AI 模拟面试，求职刚需高付费意愿）、HomeDesign（AI 家装）、Loamery（AI 对话沉淀插件）、Global Solo（LLC 对比站 affiliate）等多款已上线产品，全部 URL 验证 200；④ 信号 9 条全量留档 src/signals/2026-08-18.md。深度项目 3 个，角度互不重叠（路由服务/求职工具/内容服务），URL 全部 curl 验证。"
+}
