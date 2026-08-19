@@ -1,0 +1,14 @@
+{
+  "date": "2026-08-19",
+  "collector": "钱多多",
+  "sourcePipeline": "MCP biz_opportunity since_hours=48 take=60(priority)+40(6源latest) + GitHub API trending + chinese-independent-developer 金矿 + curl 验证",
+  "sourcesUsed": ["hn_best", "producthunt", "techcrunch_ai", "huxiu", "36kr_flash", "sspai", "ai_bot_projects", "github-trending", "chinese-independent-developer"],
+  "verification": {"method": "curl+HTTP 状态码+页面标题", "verifiedUrls": ["https://github.com/deepseek-ai/deepseek-harness", "https://github.com/anywhere-labs/deepseek-harness-desktop", "https://dsh-meme-hub.cdqyfdbymn.me/", "https://github.com/dmmulroy/anti-slop", "https://github.com/mukundzha/avouch", "https://github.com/milind-soni/OpenMausBot", "https://github.com/guillaumemeyer/watermarks-remover", "https://github.com/RyanCodrai/turbovec", "https://www.seatingchartgenerator.app", "https://pixonara.com", "https://cdn.kuber.studio/chat/hp-laser-1008a-driver"], "verifiedAt": "2026-08-19T08:20:00+08:00"},
+  "projects": [
+    {"title": "DeepSeek Harness 插件生态掘金（16 万星『万物皆插件』）", "slug": "2026-08-19-dsh-plugin-ecosystem", "source": "GitHub Trending", "sourceUrl": "https://github.com/deepseek-ai/deepseek-harness", "feasibility": 4, "category": "其他"},
+    {"title": "AI 代码『反注水』质量门禁服务", "slug": "2026-08-19-ai-code-anti-slop-service", "source": "GitHub Trending", "sourceUrl": "https://github.com/dmmulroy/anti-slop", "feasibility": 4, "category": "服务"},
+    {"title": "Claude Code『最后一公里』老硬件/自动化解难题服务", "slug": "2026-08-19-claude-legacy-device-fixer-service", "source": "Hacker News", "sourceUrl": "https://cdn.kuber.studio/chat/hp-laser-1008a-driver", "feasibility": 4, "category": "服务"},
+    {"title": "免费工具站 SEO 引流变现（座位表/提示词图库）", "slug": "2026-08-19-free-tool-site-seo", "source": "chinese-independent-developer", "sourceUrl": "https://www.seatingchartgenerator.app", "feasibility": 4, "category": "工具"}
+  ],
+  "notes": "周三，HN 信源以技术/宏观偏多，真正的机会信号集中在 GitHub Trending——最重磅是 DeepSeek Harness 插件生态爆发（主仓16万星，一周内桌面端/路由套件/WebUI/TUI/皮肤/导航下载站全部冒出，各数千星，GitHub API 实测 verified）。配合 C2PA 溯源标准带来的『AI 水印擦除』需求、anti-slop『反AI注水代码』工具、以及 HN 上 Claude Code 给 macOS 写 HP 打印机驱动的『最后一公里』案例，构成今日主线。金矿仓库新收录 SeatingChartGenerator/Pixonara 两个免费工具站案例验证 SEO 引流模式。信号9条全量留档 src/signals/2026-08-19.md。深度项目4个，角度互不重叠（开源生态/代码质量服务/硬件自动化服务/工具站SEO），URL 全部 curl 验证 200。"
+}
