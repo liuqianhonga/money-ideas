@@ -1,0 +1,14 @@
+{
+  "date": "2026-08-20",
+  "collector": "钱多多",
+  "sourcePipeline": "MCP biz_opportunity since_hours=48 take=40(priority)+40(6源latest producthunt/techcrunch_ai/ai_bot/huxiu/36kr/tmtpost) + GitHub Trending curl + Sideidea 真实盈利案例 + curl 验证",
+  "sourcesUsed": ["hn_best", "producthunt", "techcrunch_ai", "huxiu", "36kr_flash", "tmtpost", "ai_bot_projects", "github-trending", "sideidea"],
+  "verification": {"method": "curl+HTTP 状态码", "verifiedUrls": ["https://screenshotapi.net/", "https://standardresume.co/", "https://pennypresses.net/home/map.php", "https://github.com/onecli/onecli", "https://theremin.bizibah.com/", "https://cronloop.ai", "https://inco.ai/"], "verifiedAt": "2026-08-20T08:20:00+08:00"},
+  "projects": [
+    {"title": "Screenshot as a Service：网页截图 API 工具（真实盈利案例 $420/MRR）", "slug": "2026-08-20-screenshot-api-saas", "source": "Sideidea 真实盈利案例", "sourceUrl": "https://sideidea.com/article/58", "feasibility": 4, "category": "工具"},
+    {"title": "Standard Resume 式简历工具 SaaS（真实盈利案例 $3k/月）", "slug": "2026-08-20-resume-builder-saas", "source": "Sideidea 真实盈利案例", "sourceUrl": "https://sideidea.com/article/57", "feasibility": 4, "category": "工具"},
+    {"title": "Pressed Penny Machine Map 式垂直 Niche 地图/目录站", "slug": "2026-08-20-niche-map-directory-site", "source": "Hacker News", "sourceUrl": "https://pennypresses.net/home/map.php", "feasibility": 3, "category": "流量"},
+    {"title": "AI Agent 凭据安全网关/沙箱部署服务（OneCLI YC S26）", "slug": "2026-08-20-agent-credential-gateway-service", "source": "Launch HN (YC S26)", "sourceUrl": "https://github.com/onecli/onecli", "feasibility": 3, "category": "服务"}
+  ],
+  "notes": "周四，HN 头条整体偏技术/宏观（Go 1.27、XWayland、OpenRouter×Stripe 等不适合个人），真正可落地机会来自三类：①Sideidea 真实盈利案例——ScreenshotAPI（$420/MRR）与 Standard Resume（约$3k/月）是两个数据完整、可复制的『API/简历工具 SaaS』，冷启动靠 Product Hunt/SEO，零到什么几乎零成本；②HN 上榜的 pennypresses.net 压印币机地图站，是『垂直 Niche 地图/目录站』流量打法的绝佳模板；③OneCLI（YC S26）揭示的『AI Agent 凭据安全网关/沙箱』趋势，落地为企业 Agent 安全私有部署服务（门槛高、慢钱，信心指数低但趋势真实）。综合 huxiu 可儿娃娃案例补充『娃圈手作/妆师/DIY』国内副业信号。信号9条全量留档 src/signals/2026-08-20.md。深度项目4个角度互不重叠，URL 全部 curl 验证 200（Product Hunt Claude Watermark 403 为反爬、已改用官网）。"
+}
