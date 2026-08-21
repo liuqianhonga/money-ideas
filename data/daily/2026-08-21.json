@@ -1,0 +1,39 @@
+{
+  "date": "2026-08-21",
+  "collector": "钱多多",
+  "sourcePipeline": "MCP biz_opportunity since_hours=48 take=40 + producthunt take=15 + Sideidea 深度信源",
+  "sourcesUsed": ["hn_best", "producthunt", "sideidea", "github_trending"],
+  "verification": {
+    "method": "curl+regex / og:title",
+    "verifiedUrls": [
+      "https://pennypresses.net/home/map.php",
+      "https://justsketch.me/",
+      "https://www.producthunt.com/products/protonote",
+      "https://www.producthunt.com/products/aloud-4",
+      "https://www.danielvaughn.dev/posts/huzzah/",
+      "https://simedw.com/2026/08/20/midi-autocomplete/",
+      "http://sideidea.com/article/56",
+      "http://sideidea.com/article/54"
+    ],
+    "verifiedAt": "2026-08-21T08:20:00+08:00"
+  },
+  "projects": [
+    {
+      "title": "垂直行业资讯周报：做一份别人愿意付费订阅/投广告的 Newsletter（真实盈利案例）",
+      "slug": "influence-weekly-newsletter",
+      "source": "Sideidea 真实盈利案例",
+      "sourceUrl": "https://sideidea.com/article/56",
+      "feasibility": 4,
+      "category": "内容"
+    },
+    {
+      "title": "垂直人群小工具：给插画师做姿势参考工具订阅制（真实盈利案例，月入约 ¥7W）",
+      "slug": "justsketchme-artist-tool",
+      "source": "Sideidea 真实盈利案例",
+      "sourceUrl": "https://sideidea.com/article/54",
+      "feasibility": 4,
+      "category": "工具"
+    }
+  ],
+  "notes": "今日 HN 侧更多是技术/观点文章，深度信源 Sideidea 贡献两个高质量真实盈利案例（Influence Weekly 周报 + JustSketchMe 工具）。快报层共 9 条信号留档，含 PH 两个 AI 开发配套工具与 HN 三个 Show HN 项目。两个深度项目均为低门槛、可复制、有明确变现路径的内容/工具模式。"
+}
