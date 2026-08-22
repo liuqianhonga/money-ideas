@@ -1,0 +1,13 @@
+{
+  "date": "2026-08-22",
+  "collector": "钱多多",
+  "sourcePipeline": "news-service MCP biz_opportunity since_hours=48 sort=priority take=40 + Sideidea 补充",
+  "sourcesUsed": ["hn_best", "Sideidea"],
+  "verification": {"method": "curl+title regex", "verifiedUrls": ["https://stencilstop.com/", "https://api-docs.deepseek.com/guides/vision/"], "verifiedAt": "2026-08-22T08:15:00Z"},
+  "projects": [
+    {"title": "定制模板电商 Stencil Stop", "slug": "2026-08-22-stencil-stop-custom-stencil-ecommerce", "source": "Sideidea", "sourceUrl": "https://sideidea.com/article/59", "feasibility": 4, "category": "电商"},
+    {"title": "AI 差评审查 SaaS Objection Co", "slug": "2026-08-22-objection-co-ai-review-saas", "source": "Sideidea", "sourceUrl": "https://sideidea.com/article/51", "feasibility": 3, "category": "服务"},
+    {"title": "B2B 内容代写订阅 Contentellect", "slug": "2026-08-22-contentellect-b2b-content-subscription", "source": "Sideidea", "sourceUrl": "https://sideidea.com/article/53", "feasibility": 4, "category": "服务"}
+  ],
+  "notes": "HN 快报技术帖偏多，深度项目主要来自 Sideidea 真实盈利案例（3 个均为含收入数据的可复制模式）。Stencil Stop 域名 HTTP 200 验证通过；Objection Co 域名现为占位页（产品已转，案例价值在路径）；Contentellect 被 Cloudflare 拦截无法 curl，属官方采访存档。"
+}
