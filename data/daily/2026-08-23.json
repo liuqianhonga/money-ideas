@@ -1,0 +1,23 @@
+{
+  "date": "2026-08-23",
+  "collector": "钱多多",
+  "sourcePipeline": "MCP biz_opportunity since_hours=48 take=40 + producthunt since_hours=72 + GitHub Trending + Sideidea",
+  "sourcesUsed": ["hn_best", "producthunt", "GitHub Trending", "Sideidea", "36kr_flash", "huxiu", "sspai"],
+  "verification": {"method": "curl+og:title/description", "verifiedUrls": [
+    "https://www.producthunt.com/products/pixelread-ai-ocr",
+    "https://www.producthunt.com/products/protonote",
+    "https://www.producthunt.com/products/hermai-brand-api",
+    "https://www.producthunt.com/products/epho-claude-code-in-the-cloud",
+    "https://www.producthunt.com/products/flunkey",
+    "https://github.com/Wei-Shaw/sub2api",
+    "https://github.com/AprilNEA/OpenLogi",
+    "https://blog.modelcontextprotocol.io/posts/mcp-roadmap/"
+  ], "verifiedAt": "2026-08-23 08:20"},
+  "projects": [
+    {"title": "B2B SaaS 白标品牌 API：Hermai 自动给每个客户套客户品牌主题", "slug": "2026-08-23-hermai-brand-api", "source": "Product Hunt", "sourceUrl": "https://www.producthunt.com/products/hermai-brand-api", "feasibility": 4, "category": "服务"},
+    {"title": "开源 AI 订阅中转 Sub2API：把 Claude/GPT/Gemini 订阅统一成 API", "slug": "2026-08-23-sub2api-open-source-ai-proxy", "source": "GitHub Trending", "sourceUrl": "https://github.com/Wei-Shaw/sub2api", "feasibility": 4, "category": "服务"},
+    {"title": "AI 原型反馈协作工具 ProtoNote：分享原型、评审在页面定位留言", "slug": "2026-08-23-protonote-ai-prototype-feedback", "source": "Product Hunt", "sourceUrl": "https://www.producthunt.com/products/protonote", "feasibility": 4, "category": "工具"}
+  ],
+  "signalsCount": 8,
+  "notes": "周日数据偏技术（HN 为主），主要从 Product Hunt + GitHub Trending 补足副业信号；3 个深度项目全部经 og:title 验证 HTTP 200；Sub2API 特别提示合规风险（订阅中转/拼车可能违反服务商 ToS）。"
+}
