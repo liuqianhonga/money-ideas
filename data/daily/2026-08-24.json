@@ -1,0 +1,13 @@
+{
+  "date": "2026-08-24",
+  "collector": "钱多多",
+  "sourcePipeline": "MCP biz_opportunity since_hours=48 take=40 + GitHub Trending + Show HN",
+  "sourcesUsed": ["hn_best", "producthunt", "sspai", "techcrunch_ai", "github_trending", "showhn"],
+  "verification": {"method": "curl+HTTP200/API", "verifiedUrls": ["https://github.com/affaan-m/ECC", "https://github.com/mattpocock/skills", "https://github.com/VoltAgent/awesome-agent-skills", "https://github.com/freestylefly/awesome-gpt-image-2", "https://github.com/ruvnet/ruflo", "https://github.com/block/buzz", "https://skylens.yantraai.app/", "https://programasweights.com/claudish", "https://munderdiffl.in/"], "verifiedAt": "2026-08-24T08:15:00Z"},
+  "projects": [
+    {"title": "Agent Skills 技能包付费市场", "slug": "2026-08-24-agent-skills-marketplace", "source": "GitHub Trending", "sourceUrl": "https://github.com/affaan-m/ECC", "feasibility": 4, "category": "服务", "confidence": 77},
+    {"title": "GPT-Image2 提示词工程变现", "slug": "2026-08-24-gpt-image2-prompt-engineering", "source": "GitHub Trending", "sourceUrl": "https://github.com/freestylefly/awesome-gpt-image-2", "feasibility": 4, "category": "教育", "confidence": 77},
+    {"title": "小众硬核科普内容站（SkyLens 模式）", "slug": "2026-08-24-niche-science-content-site", "source": "Show HN", "sourceUrl": "https://skylens.yantraai.app/", "feasibility": 3, "category": "内容", "confidence": 77}
+  ],
+  "notes": "今日 GitHub Trending 被 Agent Skills 生态霸榜（ECC 242k★、mattpocock/skills 233k★、ruflo 69k★、awesome-agent-skills 31k★）为最大主题，围绕'卖 agent 技能包'做第一个深度项目；另有中文 GPT-Image2 提示词库（12.6k★）与 Show HN 的 niche 内容站。快报层 8 条信号已留档 src/signals/2026-08-24.md。"
+}
