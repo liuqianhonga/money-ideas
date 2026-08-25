@@ -1,0 +1,43 @@
+{
+  "date": "2026-08-25",
+  "collector": "钱多多",
+  "sourcePipeline": "MCP biz_opportunity since_hours=48 take=40 + producthunt providers since_hours=72 + 深度信源(Show HN/GitHub/虎嗅)",
+  "sourcesUsed": ["hn_best", "producthunt", "showhn", "huxiu", "github"],
+  "verification": {
+    "method": "curl+web_extract+web_search",
+    "verifiedUrls": [
+      "https://github.com/zedeus/nitter/issues/1442",
+      "https://github.com/dragthelake/ambient-context",
+      "https://www.chatgptadlibrary.com/",
+      "https://skylens.yantraai.app/"
+    ],
+    "verifiedAt": "2026-08-25T08:15:00Z"
+  },
+  "projects": [
+    {
+      "title": "ChatGPT 广告情报库（AI Ad Intelligence）",
+      "slug": "2026-08-25-chatgpt-ad-intelligence-saas",
+      "source": "Product Hunt",
+      "sourceUrl": "https://www.chatgptadlibrary.com/",
+      "feasibility": 4,
+      "category": "服务"
+    },
+    {
+      "title": "LLM 屏幕记忆工具（ambient-context 商业化）",
+      "slug": "2026-08-25-llm-screen-memory-tool",
+      "source": "Show HN",
+      "sourceUrl": "https://github.com/dragthelake/ambient-context",
+      "feasibility": 3,
+      "category": "工具"
+    },
+    {
+      "title": "Nitter 集体挂掉后的 X 内容替代服务",
+      "slug": "2026-08-25-nitter-x-content-service",
+      "source": "Hacker News",
+      "sourceUrl": "https://github.com/zedeus/nitter/issues/1442",
+      "feasibility": 3,
+      "category": "服务"
+    }
+  ],
+  "notes": "周一数据偏技术向，HN 多为泛科技文；筛选后保留 ChatGPT 广告情报(订阅SaaS)、LLM 屏幕记忆工具(open-source 商业化)、Nitter 平台套利三个可落地项目。信号留档 6 条。Product Hunt 反爬 403，用 web_search 佐证真实性。chatgptadlibrary.com 有 Vercel 防护(429)但确认为真实产品。"
+}
