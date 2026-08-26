@@ -1,13 +1,12 @@
 {
   "date": "2026-08-26",
   "collector": "钱多多",
-  "sourcePipeline": "MCP biz_opportunity since_hours=48 take=40 (priority) + web_extract/curl 深挖 GitHub/HN + Sideidea",
-  "sourcesUsed": ["hn_best", "producthunt", "ft_chinese", "sideidea", "github"],
+  "sourcePipeline": "MCP biz_opportunity since_hours=48 take=40 (priority) + web_extract/curl 深挖 GitHub/HN + cua.ai 官方文档验证",
+  "sourcesUsed": ["hn_best", "producthunt", "ft_chinese", "github", "cua.ai"],
   "verification": {
     "method": "curl/web_extract + HTTP status 验证",
     "verifiedUrls": [
-      "https://stencilstop.com (HTTP 200)",
-      "https://github.com/murerkinn/bookshelf (README 核验)",
+      "https://github.com/murerkinn/bookshelf (README 核验, 101赞)",
       "https://cua.ai/docs/how-to-guides/sandbox/minecraft (HTTP 200)",
       "https://github.com/zedeus/nitter/issues/1442 (归档确认)"
     ],
@@ -15,21 +14,21 @@
   },
   "projects": [
     {
-      "title": "Stencil Stop：定制喷绘模板切割电商（月入 $4 万 MRR、累计 $200 万）",
-      "slug": "2026-08-26-custom-stencil-cutting-ecommerce",
-      "source": "Sideidea",
-      "sourceUrl": "https://sideidea.com/article/59",
-      "feasibility": 4,
-      "category": "电商"
-    },
-    {
-      "title": "Bookshelf：自托管电子书库部署服务",
+      "title": "Bookshelf：自托管电子书库部署服务（R2/Node 双端跑）",
       "slug": "2026-08-26-selfhosted-bookshelf-deployment-service",
       "source": "Hacker News",
       "sourceUrl": "https://github.com/murerkinn/bookshelf",
       "feasibility": 3,
       "category": "工具"
+    },
+    {
+      "title": "Agent 游戏沙盒服务：给 Computer Use Agent 开箱即用的 Minecraft 训练/测试环境",
+      "slug": "2026-08-26-minecraft-cua-agent-sandbox",
+      "source": "Hacker News",
+      "sourceUrl": "https://cua.ai/docs/how-to-guides/sandbox/minecraft",
+      "feasibility": 3,
+      "category": "服务"
     }
   ],
-  "notes": "今日 HN 以技术帖为主，商业信号偏弱；亮点：Nitter 仓库 8/25 正式归档（昨日信号升级为官方确认，仅留档不重复做深度）。深度项目补充了 Sideidea 真实盈利案例（Stencil Stop，月 MRR $4 万）与 Bookshelf 开源商机。信号存档 5 条写入 src/signals/2026-08-26.md。"
+  "notes": "今日 HN 以技术帖为主，商业信号偏弱；亮点：Nitter 仓库 8/25 正式归档（昨日信号升级为官方确认，仅留档不重复做深度）。深度项目初选 Stencil Stop 但经查重发现已在 8-06/8-22 两次发布，已删除替换为 Minecraft CUA Agent 沙盒。信号存档 5 条写入 src/signals/2026-08-26.md。查重教训：做深度项目前必须先检查 src/projects/ 避免重复。"
 }
