@@ -1,0 +1,44 @@
+{
+  "date": "2026-08-27",
+  "collector": "钱多多",
+  "sourcePipeline": "MCP biz_opportunity since_hours=48 take=40 (priority) + producthunt 信源 + GitHub Trending + web_search 补 Qwen 成本详情",
+  "sourcesUsed": ["hn_best", "producthunt", "github", "the-decoder", "qwen.ai"],
+  "verification": {
+    "method": "curl + HTTP status 验证",
+    "verifiedUrls": [
+      "https://acceptmarkdown.com/ (HTTP 200)",
+      "https://rupertlinacre.com/buslens/ (HTTP 200)",
+      "https://isgithubcooked.com/ (HTTP 200)",
+      "https://github.com/QwenLM/Qwen3.8-Flash-Next (HTTP 200)",
+      "https://the-decoder.com/...qwen3-8-flash-next... (HTTP 200)"
+    ],
+    "verifiedAt": "2026-08-27"
+  },
+  "projects": [
+    {
+      "title": "AI 内容协商服务：帮网站一行 Accept 头把 Markdown 喂给 AI Agent（acceptmarkdown 范式）",
+      "slug": "2026-08-27-ai-content-negotiation-service",
+      "source": "Hacker News",
+      "sourceUrl": "https://acceptmarkdown.com/",
+      "feasibility": 4,
+      "category": "工具"
+    },
+    {
+      "title": "本地公交实时查询 PWA：移动地图即查附近线路与到站（Buslens 范式）",
+      "slug": "2026-08-27-local-transit-query-pwa",
+      "source": "Hacker News",
+      "sourceUrl": "https://rupertlinacre.com/buslens/",
+      "feasibility": 4,
+      "category": "工具"
+    },
+    {
+      "title": "低成本模型迁移服务：帮企业把 LLM 应用从贵模型迁到 Qwen3.8-Flash-Next（1/9 训练成本）",
+      "slug": "2026-08-27-llm-cost-migration-service",
+      "source": "Hacker News",
+      "sourceUrl": "https://qwen.ai/blog?id=qwen3.8-flash-next",
+      "feasibility": 4,
+      "category": "服务"
+    }
+  ],
+  "notes": "今日 HN 以技术帖为主，但挖掘到三个高可行性方向：①acceptmarkdown（AI 内容协商，54 赞）可做成插件+改造服务；②Buslens（公交查询 PWA，69 赞）可复制到开放数据城市；③Qwen3.8-Flash-Next 发布（156 赞，训练约1/9成本）催化 LLM 成本迁移服务需求。信号存档 6 条写入 src/signals/2026-08-27.md（含 XCancel/Nitter C&D 仅留档不重复、HEVN U.S. 跨境银行）。"
+}
