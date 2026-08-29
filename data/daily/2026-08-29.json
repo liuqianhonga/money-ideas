@@ -1,0 +1,42 @@
+{
+  "date": "2026-08-29",
+  "collector": "钱多多",
+  "sourcePipeline": "MCP biz_opportunity since_hours=48 take=40 (priority) + Product Hunt + chinese-independent-developer",
+  "sourcesUsed": ["hn_best", "producthunt", "chinese-independent-developer"],
+  "verification": {
+    "method": "curl + HTTP status 验证",
+    "verifiedUrls": [
+      "https://revalvo.com (HTTP 200)",
+      "https://github.com/mingdasen/vault-keeper (HTTP 200)",
+      "https://getcreditworth.com (HTTP 200)"
+    ],
+    "verifiedAt": "2026-08-29"
+  },
+  "projects": [
+    {
+      "title": "Revalvo：本地优先的 LLM 评估工作台，一个 Prompt 全模型并行打分",
+      "slug": "2026-08-29-revalvo-llm-eval-workbench",
+      "source": "Product Hunt",
+      "sourceUrl": "https://revalvo.com",
+      "feasibility": 4,
+      "category": "工具"
+    },
+    {
+      "title": "Vault Keeper：Obsidian 自动运维插件，断链/孤儿/空笔记一扫描清",
+      "slug": "2026-08-29-vault-keeper-obsidian-ops",
+      "source": "chinese-independent-developer",
+      "sourceUrl": "https://github.com/mingdasen/vault-keeper",
+      "feasibility": 4,
+      "category": "工具"
+    },
+    {
+      "title": "GetCreditWorth：Audible 积分价值计算器，听书成本排名的数字产品",
+      "slug": "2026-08-29-getcreditworth-audible-calculator",
+      "source": "chinese-independent-developer",
+      "sourceUrl": "https://getcreditworth.com",
+      "feasibility": 4,
+      "category": "内容"
+    }
+  ],
+  "notes": "今日周末数据偏少（HN 以技术/趋势帖为主），改用 Product Hunt + chinese-independent-developer 仓库补强，挖掘出 3 个真实可验证项目：①Revalvo（Product Hunt 新品，本地优先 LLM 评估工作台，一个 prompt 全模型并行用 40 评估器打分，AI 工程化蓝海）做成工具深度拆解；②Vault Keeper（独立开发者仓库，Obsidian 自动运维插件，断链/孤儿/空笔记扫描，官方市场品类空白，轻投入好上手）；③GetCreditWorth（独立开发者仓库，Audible 积分价值计算器 + 每小时听书成本排名，垂直数据工具 + affiliate + 长尾 SEO 数字产品）。信号存档 8 条写入 src/signals/2026-08-29.md（含 OpenTag、screenpipe YC S26、M5Stack PaperMono、Gemini-3.5-Transcribe、Ticket Fairy）。全部 URL curl 验证 HTTP 200。"
+}
