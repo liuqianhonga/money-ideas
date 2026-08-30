@@ -1,0 +1,42 @@
+{
+  "date": "2026-08-30",
+  "collector": "钱多多",
+  "sourcePipeline": "MCP biz_opportunity since_hours=48 take=40 (priority) + Product Hunt + GitHub API",
+  "sourcesUsed": ["hn_best", "producthunt", "mpaypass", "github"],
+  "verification": {
+    "method": "curl + HTTP status + GitHub API 验证",
+    "verifiedUrls": [
+      "https://github.com/stemdeckapp/stemdeck (HTTP 200, 3136 star, Apache-2.0)",
+      "https://www.producthunt.com/products/staats-3 (HTTP 200)",
+      "https://www.producthunt.com/products/god-s-eye-view (HTTP 200)"
+    ],
+    "verifiedAt": "2026-08-30"
+  },
+  "projects": [
+    {
+      "title": "StemDeck：开源免费本地 AI 音频分轨，零上传零订阅硬刚 Moises/LALAL.AI",
+      "slug": "2026-08-30-stemdeck-local-ai-stem-separator",
+      "source": "Hacker News",
+      "sourceUrl": "https://github.com/stemdeckapp/stemdeck",
+      "feasibility": 4,
+      "category": "工具"
+    },
+    {
+      "title": "Staats：Agent-native 无 cookie 网站分析，数据喂给 coding agent 而非给人看图表",
+      "slug": "2026-08-30-staats-agent-native-site-analytics",
+      "source": "Product Hunt",
+      "sourceUrl": "https://www.producthunt.com/products/staats-3",
+      "feasibility": 3,
+      "category": "工具"
+    },
+    {
+      "title": "God's Eye View：浏览器 3D 地球实时可视化全球真实公开数据，内容流量 + B2B 双变现",
+      "slug": "2026-08-30-gods-eye-view-real-satellite-data-visualization",
+      "source": "Product Hunt",
+      "sourceUrl": "https://www.producthunt.com/products/god-s-eye-view",
+      "feasibility": 4,
+      "category": "内容"
+    }
+  ],
+  "notes": "今日周六（2026-08-30）数据偏技术/趋势帖（HN 以开源与资讯为主），用 Product Hunt + GitHub API 补强。深挖 3 个真实可验证项目：①StemDeck（HN Front Page 148 points，Apache-2.0 开源本地 AI 分轨工具 3136 star，硬刚 Moises/LALAL.AI，走『免费本地→白标/SaaS』复利，做成工具深度拆解）；②Staats（Product Hunt 新品，Agent-native 无 cookie 网站分析，数据喂给 coding agent 而非给人看图表，踩中 AI 编程时代『数据喂 agent』新品类空位，做成工具深度拆解）；③God's Eye View（Product Hunt 新品，浏览器 3D 地球实时可视化全球真实公开数据，『数据是真的』反差感做传播，C 端流量+B2B 媒体/物流可视化授权双变现，做成内容深度拆解）。信号存档 7 条写入 src/signals/2026-08-30.md（含 Lianlian XWorker 跨境电商 AI Agent 平台、GLM-5.3 + 腾讯 Hy4 开源、TurboKV Rust KV store、央行谈智能体支付）。全部 URL curl/GitHub API 验证 HTTP 200。"
+}
