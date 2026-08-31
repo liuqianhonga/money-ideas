@@ -1,0 +1,43 @@
+{
+  "date": "2026-08-31",
+  "collector": "钱多多",
+  "sourcePipeline": "MCP biz_opportunity since_hours=48 take=40 (priority) + Product Hunt + ai_bot.cn + GitHub API",
+  "sourcesUsed": ["hn_best", "producthunt", "ai_bot_projects", "mpaypass", "github"],
+  "verification": {
+    "method": "curl + HTTP status + GitHub API 验证",
+    "verifiedUrls": [
+      "https://github.com/jundot/omlx (HTTP 200, 21056 star, Apache-2.0)",
+      "https://ai-bot.cn/2026-ai-signboard-design-tools/ (HTTP 200)",
+      "https://github.com/eternityspring/shuohao-skills (HTTP 200, 2439 star, Apache-2.0)",
+      "https://www.producthunt.com/products/omlx (HTTP 200)"
+    ],
+    "verifiedAt": "2026-08-31"
+  },
+  "projects": [
+    {
+      "title": "oMLX：把 Mac 变成全功能 LLM 推理服务器，Agent 等待从 90s 压到 5s",
+      "slug": "2026-08-31-omlx-mac-llm-server",
+      "source": "Product Hunt",
+      "sourceUrl": "https://github.com/jundot/omlx",
+      "feasibility": 4,
+      "category": "工具"
+    },
+    {
+      "title": "AI 生成图文店/广告店门头效果图代做",
+      "slug": "2026-08-31-ai-signboard-effect-service",
+      "source": "AI工具集",
+      "sourceUrl": "https://ai-bot.cn/2026-ai-signboard-design-tools/",
+      "feasibility": 5,
+      "category": "服务"
+    },
+    {
+      "title": "shuohao-skills：开源 AI 短剧制作 Skill 集合，全流程 Agent 化",
+      "slug": "2026-08-31-shuohao-ai-shortdrama-skills",
+      "source": "AI工具集",
+      "sourceUrl": "https://github.com/eternityspring/shuohao-skills",
+      "feasibility": 4,
+      "category": "内容"
+    }
+  ],
+  "notes": "今日周一（2026-08-31），HN 以纯技术帖为主（CDLM/免费CORE/Zig/vLLM 等，无变现信号），用 Product Hunt + ai_bot.cn + GitHub API 补强。深挖 3 个真实可验证、互补的赚钱项目：①oMLX（Product Hunt 新品 + GitHub 21k star，Apache-2.0，把 Mac 变全功能 LLM 推理服务器，连续批处理 + SSD 分级 KV cache 把 Agent 等待从 90s 压到 5s，踩『本地优先 + Agent 推理成本』风口，做成工具深度拆解——海外开源工具）；②AI 门头效果图代做（AI工具集 2026-08-28 深度横评 7 款工具，AI 已把门头/文化墙/宣传页效果图从小时级压到分钟级，『先看效果图再下单』是图文店存量真实需求，小店员工不会用 AI 是剪刀差，极低门槛按单收费，做成国内副业深度拆解，可行性 5/5）；③shuohao-skills（ai_bot.cn + GitHub 2439 star，Apache-2.0，开源 AI 短剧制作 Skill 集合，抓抖音 2026 上半年新增 22.19 万部 AI 剧/漫剧的爆发风口，『会调 Agent 干活』的工业化量产是切入机会，做成开源商机深度拆解）。信号存档 9 条写入 src/signals/2026-08-31.md（含 Rome 开源 Agentic OS、Miya AI 音乐、Superagent、Lianlian XWorker 跨境电商 Agent 平台、央行谈智能体支付、WeChat Pay HK 深圳离境退税）。全部 URL curl/GitHub API 验证 HTTP 200。"
+}
