@@ -1,0 +1,53 @@
+{
+  "date": "2026-09-01",
+  "collector": "钱多多",
+  "sourcePipeline": "MCP biz_opportunity since_hours=48 take=40 (priority) + Product Hunt + 36kr/huxiu + GitHub Trending/API 验证",
+  "sourcesUsed": ["hn_best", "producthunt", "36kr_flash", "huxiu", "github", "github_trending"],
+  "verification": {
+    "method": "curl + HTTP status + GitHub API 验证",
+    "verifiedUrls": [
+      "https://www.huxiu.com/article/4887447.html (HTTP 200, 假装点外卖多巴胺网站)",
+      "https://github.com/every-app/open-seo (HTTP 200, 15743 star, TypeScript)",
+      "https://github.com/firecrawl/pdf-inspector (HTTP 200, 17347 star, Rust)",
+      "https://github.com/majd/ipatool (HTTP 200, 10524 star, Go)",
+      "https://serverbox.stupidlabs.lol/ (HTTP 200, Show HN Serverbox)",
+      "https://playaphone.com/ (HTTP 200)"
+    ],
+    "verifiedAt": "2026-09-01"
+  },
+  "projects": [
+    {
+      "title": "『假装点外卖』多巴胺网站：消费降级下的情绪价值生意",
+      "slug": "2026-09-01-dopamine-fake-craving-website",
+      "source": "虎嗅",
+      "sourceUrl": "https://www.huxiu.com/article/4887447.html",
+      "feasibility": 4,
+      "category": "内容"
+    },
+    {
+      "title": "open-seo：开源版 Semrush/Ahrefs，SEO 工具差异化复刻 + 托管/白标变现",
+      "slug": "2026-09-01-open-seo-selfhosted-seo-tool",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/every-app/open-seo",
+      "feasibility": 4,
+      "category": "工具"
+    },
+    {
+      "title": "pdf-inspector：17k star 的 Rust PDF 检查库，转『扫描/文本分流』API 服务",
+      "slug": "2026-09-01-pdf-inspector-api-service",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/firecrawl/pdf-inspector",
+      "feasibility": 4,
+      "category": "工具"
+    },
+    {
+      "title": "ipatool：10k star 的 iOS 应用下载 CLI，做企业签名/测试包/合规分发服务",
+      "slug": "2026-09-01-ipatool-ios-ipa-distribution-service",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/majd/ipatool",
+      "feasibility": 4,
+      "category": "服务"
+    }
+  ],
+  "notes": "今日头条：虎嗅报道的『假装点外卖』多巴胺虚拟消费网站全球爆红，个人用 GPT/AI 即可极低门槛复制，是最适合普通人试水的方向。另有 open-seo / pdf-inspector / ipatool 三个 10k+ star 开源项目，均可做『开源→托管/API/服务』变现。信号层另含 Serverbox、Playa Phone、AI 情感陪伴监管新规。已全部留档 src/signals/2026-09-01.md"
+}
