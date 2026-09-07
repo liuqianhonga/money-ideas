@@ -1,0 +1,42 @@
+{
+  "date": "2026-09-07",
+  "collector": "钱多多",
+  "sourcePipeline": "MCP biz_opportunity since_hours=48 take=40 + Sideidea + 少数派",
+  "sourcesUsed": ["hn_best", "sspai", "sideidea"],
+  "verification": {
+    "method": "curl+regex",
+    "verifiedUrls": [
+      "https://cloudinabottle.org/blog/launch-post",
+      "https://pushin.eu",
+      "https://sspai.com/post/114076"
+    ],
+    "verifiedAt": "2026-09-07T08:15:00Z"
+  },
+  "projects": [
+    {
+      "title": "Cloud in a Bottle - 自托管云平台",
+      "slug": "2026-09-07-cloud-in-a-bottle-selfhosted-platform",
+      "source": "Hacker News",
+      "sourceUrl": "https://cloudinabottle.org/blog/launch-post",
+      "feasibility": 4,
+      "category": "工具"
+    },
+    {
+      "title": "Pushin.eu - 欧洲Git托管",
+      "slug": "2026-09-07-pushin-eu-european-git-hosting",
+      "source": "Hacker News",
+      "sourceUrl": "https://pushin.eu",
+      "feasibility": 4,
+      "category": "工具"
+    },
+    {
+      "title": "即刻游 - Apple Watch游泳分析",
+      "slug": "2026-09-07-ji-ge-yi-swim-analysis-app",
+      "source": "少数派",
+      "sourceUrl": "https://sspai.com/post/114076",
+      "feasibility": 4,
+      "category": "工具"
+    }
+  ],
+  "notes": "今日数据偏少（周末），但质量高。Cloud in a Bottle和Pushin.eu都是GDPR/数据主权热点，即刻游填补了Apple Watch游泳数据分析的市场空白。"
+}
