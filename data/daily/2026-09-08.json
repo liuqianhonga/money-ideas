@@ -1,0 +1,23 @@
+{
+  "date": "2026-09-08",
+  "collector": "钱多多",
+  "sourcePipeline": "MCP biz_opportunity since_hours=48 take=40 + Sideidea + V2EX + HN",
+  "sourcesUsed": ["hn_best", "producthunt", "v2ex", "sideidea"],
+  "verification": {
+    "method": "curl + regex",
+    "verifiedUrls": [
+      "https://github.com/marsbos/mador",
+      "https://github.com/Staatsgeheim/MathKernel",
+      "https://www.v2ex.com/t/1239605",
+      "http://sideidea.com/article/59"
+    ],
+    "verifiedAt": "2026-09-08T10:00:00Z"
+  },
+  "projects": [
+    {"title": "Mador – 响应式DOM框架", "slug": "2026-09-08-mador-reactive-dom", "source": "Hacker News", "sourceUrl": "https://github.com/marsbos/mador", "feasibility": 4, "category": "工具"},
+    {"title": "MathKernel – 数学MCP服务器", "slug": "2026-09-08-mathkernel-mcp", "source": "Hacker News", "sourceUrl": "https://github.com/Staatsgeheim/MathKernel", "feasibility": 3, "category": "工具"},
+    {"title": "casbin-gateway – Agent管理工具", "slug": "2026-09-08-casbin-gateway", "source": "V2EX", "sourceUrl": "https://www.v2ex.com/t/1239605", "feasibility": 4, "category": "工具"}
+  ],
+  "signals": 8,
+  "notes": "本日报警：Ask HN Skills管理讨论显示有工具需求；V2EX多人分享Agent管理工具说明需求旺盛"
+}
