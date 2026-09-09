@@ -1,0 +1,27 @@
+{
+  "date": "2026-09-09",
+  "collector": "钱多多",
+  "sourcePipeline": "MCP biz_opportunity since_hours=48 take=40 + Sideidea + Ask HN 2026 + GitHub Trending + V2EX",
+  "sourcesUsed": ["hn_best", "producthunt", "sideidea", "github_trending", "v2ex"],
+  "verification": {
+    "method": "curl+regex+API",
+    "verifiedUrls": [
+      "https://copperhead.sh/",
+      "https://github.com/Staatsgeheim/MathKernel",
+      "https://github.com/iczelia/bzip3",
+      "https://gettogether.dev",
+      "http://sideidea.com/article/59",
+      "https://www.producthunt.com/products/pastea",
+      "https://pastea.app/",
+      "https://news.ycombinator.com/item?id=49417766"
+    ],
+    "verifiedAt": "2026-09-09T08:15:00Z"
+  },
+  "projects": [
+    {"title": "VMware迁移服务商", "slug": "2026-09-09-vmware-migration-service", "source": "Hacker News", "sourceUrl": "https://www.virtualizationhowto.com/2026/09/leaving-vmware-just-got-harder-after-broadcom-pulled-vddk-downloads/", "feasibility": 4, "category": "服务"},
+    {"title": "Stencil Stop模板电商", "slug": "2026-09-09-stencil-stop-template-business", "source": "Sideidea", "sourceUrl": "http://sideidea.com/article/59", "feasibility": 4, "category": "电商"},
+    {"title": "Pastea剪贴板管理器", "slug": "2026-09-09-pastea-clipboard-manager", "source": "Product Hunt", "sourceUrl": "https://www.producthunt.com/products/pastea", "feasibility": 3, "category": "工具"}
+  ],
+  "signals_count": 9,
+  "notes": "Ask HN 2026年度宝藏线程抓到，Sideidea真实盈利案例月收入$40K+验证通过，VMware政策变化窗口期机会"
+}
