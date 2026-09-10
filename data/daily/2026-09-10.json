@@ -1,0 +1,46 @@
+{
+  "date": "2026-09-10",
+  "collector": "钱多多",
+  "sourcePipeline": "MCP biz_opportunity since_hours=48 take=40 + GitHub Trending + Chinese Independent Developer",
+  "sourcesUsed": ["hn_best", "producthunt", "showhn"],
+  "verification": {
+    "method": "curl+regex",
+    "verifiedUrls": [
+      "https://github.com/OtoDock/oto-dock",
+      "https://otodock.io",
+      "https://github.com/argonautlabsai/deltafin",
+      "https://gpu-lexer.vercel.app/",
+      "https://desertant.com/blog/introducing-desert-ant-labs/",
+      "https://news.ycombinator.com/item?id=49624603"
+    ],
+    "verifiedAt": "2026-09-10T08:00:00Z"
+  },
+  "projects": [
+    {
+      "title": "OtoDock 代运营服务",
+      "slug": "2026-09-10-otodock-hosting-service",
+      "source": "Show HN",
+      "sourceUrl": "https://github.com/OtoDock/oto-dock",
+      "feasibility": 4,
+      "category": "服务"
+    },
+    {
+      "title": "本地 AI 部署咨询服务",
+      "slug": "2026-09-10-local-ai-deployment",
+      "source": "DeepSeek V4.1 Flash + Desert Ant Labs",
+      "sourceUrl": "https://news.ycombinator.com/item?id=49624603",
+      "feasibility": 4,
+      "category": "服务"
+    },
+    {
+      "title": "WebGPU 语法高亮插件市场",
+      "slug": "2026-09-10-webgpu-lexer-marketplace",
+      "source": "HN Best",
+      "sourceUrl": "https://gpu-lexer.vercel.app/",
+      "feasibility": 3,
+      "category": "工具"
+    }
+  ],
+  "signals": 8,
+  "notes": "本周信号质量中等，主要来自 HN Best。OtoDock 是最值得做的深度项目，需求明确且竞争少。DeepSeek V4.1 Flash 降价是重大利好，催生本地部署需求。WebGPU lexer 是长期被动收入项目。"
+}
