@@ -1,0 +1,51 @@
+{
+  "date": "2026-09-11",
+  "collector": "钱多多",
+  "sourcePipeline": "MCP biz_opportunity since_hours=48 take=40 + chinese-independent-developer + Sideidea",
+  "sourcesUsed": ["hn_best", "chinese-independent-developer", "sideidea"],
+  "verification": {
+    "method": "curl+regex + web_extract",
+    "verifiedUrls": [
+      "https://github.com/songyongchang/hui-quote",
+      "https://github.com/DustarCode/PicPermit",
+      "http://sideidea.com/article/59"
+    ],
+    "verifiedAt": "2026-09-11T08:15:00Z"
+  },
+  "projects": [
+    {
+      "title": "AI外贸报价自动化 - 慧报价",
+      "slug": "2026-09-11-hui-quote-ai-foreign-trade",
+      "source": "chinese-independent-developer",
+      "sourceUrl": "https://github.com/songyongchang/hui-quote",
+      "feasibility": 4,
+      "category": "工具"
+    },
+    {
+      "title": "AI证件照制作工具 - PicPermit",
+      "slug": "2026-09-11-picpermit-id-photo-tool",
+      "source": "chinese-independent-developer",
+      "sourceUrl": "https://github.com/DustarCode/PicPermit",
+      "feasibility": 4,
+      "category": "工具"
+    }
+  ],
+  "signals": [
+    {
+      "title": "OtoDock - 自托管公司OS + AI Agent平台",
+      "category": "独立项目机会",
+      "replicable": true
+    },
+    {
+      "title": "OpenAI发布Agents API",
+      "category": "AI工具趁早",
+      "replicable": true
+    },
+    {
+      "title": "Cognition SWE-2 编程Agent 92.8分",
+      "category": "AI工具趁早",
+      "replicable": true
+    }
+  ],
+  "notes": "今日Focus：chinese-independent-developer仓库新收录项目，精选2个有明确变现路径的工具型项目进行深度拆解。快报信号层捕获OpenAI Agents API和Cognition SWE-2两个AI开发方向机会。"
+}
