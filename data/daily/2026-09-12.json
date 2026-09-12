@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-12",
+  "collector": "钱多多",
+  "sourcePipeline": "MCP biz_opportunity since_hours=48 take=40 + Sideidea + GitHub Trending",
+  "sourcesUsed": ["hn_best", "producthunt", "sideidea"],
+  "verification": {
+    "method": "curl+regex+HTTP检查",
+    "verifiedUrls": [
+      "https://elevenmusic.io/blog/introducing-music-v2-5",
+      "https://neuro-engine.netlify.app",
+      "https://developers.openai.com/api/docs/guides/agents-api/overview",
+      "http://sideidea.com/"
+    ],
+    "verifiedAt": "2026-09-12T10:00:00Z"
+  },
+  "projects": [
+    {"title": "ElevenLabs Music v2.5", "slug": "2026-09-12-elevenlabs-music-v2-5", "source": "Hacker News", "sourceUrl": "https://elevenmusic.io/blog/introducing-music-v2-5", "feasibility": 4, "category": "AI工具"},
+    {"title": "Neuro Engine MCP服务器", "slug": "2026-09-12-neuro-engine-mcp", "source": "Hacker News", "sourceUrl": "https://neuro-engine.netlify.app", "feasibility": 4, "category": "AI工具"}
+  ],
+  "notes": "web_search和web_extract不可用（SearXNG 502错误），改用curl直抓。Sideidea数据源稳定，提供真实盈利案例。MCP生态是新兴赛道，Neuro Engine代表技术方向。"
+}
