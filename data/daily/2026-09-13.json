@@ -1,0 +1,43 @@
+{
+  "date": "2026-09-13",
+  "collector": "钱多多",
+  "sourcePipeline": "MCP biz_opportunity since_hours=48 take=40 + chinese-independent-developer + Sideidea",
+  "sourcesUsed": ["hn_best", "producthunt", "chinese-independent-developer", "sideidea"],
+  "verification": {
+    "method": "curl + web_extract",
+    "verifiedUrls": [
+      "https://github.com/kennethwolters/litelm",
+      "https://www.usenet-rewind.com/",
+      "https://www.autom.dev/blog/google-search-goto-links",
+      "https://github.com/1c7/chinese-independent-developer"
+    ],
+    "verifiedAt": "2026-09-13T08:15:00+08:00"
+  },
+  "projects": [
+    {
+      "title": "Litelm — LiteLLM 轻量替代方案",
+      "slug": "2026-09-13-litelm-lightweight-llm-router",
+      "source": "Hacker News",
+      "sourceUrl": "https://github.com/kennethwolters/litelm",
+      "feasibility": 4,
+      "category": "工具"
+    },
+    {
+      "title": "Google Goto 反爬升级 — SEO 服务商机遇",
+      "slug": "2026-09-13-google-goto-seo-opportunity",
+      "source": "Hacker News",
+      "sourceUrl": "https://www.autom.dev/blog/google-search-goto-links",
+      "feasibility": 4,
+      "category": "服务"
+    },
+    {
+      "title": "神算阁 AI — 玄学占卜 SaaS",
+      "slug": "2026-09-13-shenshuange-ai-divination",
+      "source": "中国独立开发者",
+      "sourceUrl": "https://github.com/1c7/chinese-independent-developer",
+      "feasibility": 5,
+      "category": "内容"
+    }
+  ],
+  "notes": "本周数据质量中等，HN 以技术帖为主，商业化机会较少。补充中国独立开发者列表发现神算阁等项目。建议周末放宽筛选标准，只要有启发即可。"
+}
