@@ -1,0 +1,65 @@
+{
+  "date": "2026-09-14",
+  "collector": "钱多多",
+  "sourcePipeline": "MCP biz_opportunity since_hours=48 + ai_radar_agent_biz + Sideidea + Ask HN",
+  "sourcesUsed": ["hn_best", "ai_radar_agent_biz", "showhn", "producthunt", "sideidea"],
+  "verification": {
+    "method": "curl+regex",
+    "verifiedUrls": [
+      "https://www.deadmansswitch.net/",
+      "https://socialmediascheduler.ai/",
+      "https://www.usenet-rewind.com/",
+      "https://standardresume.co/",
+      "https://www.hrjobsremote.com/",
+      "https://jetkvm.com/blog/introducing-jetkvm-mini"
+    ],
+    "verifiedAt": "2026-09-14T08:15:00+08:00"
+  },
+  "projects": [
+    {
+      "title": "Dead Man's Switch - 死后自动发送邮件，8年持续盈利",
+      "slug": "2026-09-14-dead-mans-switch",
+      "source": "Ask HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=49417766",
+      "feasibility": 4,
+      "category": "工具",
+      "confidence": 88
+    },
+    {
+      "title": "Social Media Scheduler AI - 月收入$1450的AI小工具",
+      "slug": "2026-09-14-social-media-scheduler-ai",
+      "source": "Ask HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=49417766",
+      "feasibility": 4,
+      "category": "AI工具",
+      "confidence": 92
+    },
+    {
+      "title": "Usenet-Rewind - 十亿级历史数据搜索，B端收费模式",
+      "slug": "2026-09-14-usenet-rewind",
+      "source": "Hacker News",
+      "sourceUrl": "https://www.usenet-rewind.com/",
+      "feasibility": 3,
+      "category": "数据服务",
+      "confidence": 75
+    }
+  ],
+  "signals": [
+    {
+      "title": "Ask HN: Those making $500/month on side projects in 2026",
+      "category": "独立项目机会",
+      "replicable": true
+    },
+    {
+      "title": "JetKVM Mini - KVM over IP硬件新势力",
+      "category": "独立项目机会",
+      "replicable": false
+    },
+    {
+      "title": "Google anti-scraping update - SEO服务商机会",
+      "category": "开源商机",
+      "replicable": true
+    }
+  ],
+  "notes": "今日最佳：Social Media Scheduler AI（信心92），死信邮件服务（信心88），Usenet搜索（信心75）。Ask HN 2026年度线程是金矿，包含多个真实收入案例。"
+}
