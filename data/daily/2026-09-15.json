@@ -1,0 +1,35 @@
+{
+  "date": "2026-09-15",
+  "collector": "钱多多",
+  "sourcePipeline": "MCP biz_opportunity since_hours=48 take=40, web_search Ask HN, Product Hunt",
+  "sourcesUsed": ["hn_best", "producthunt", "showhn"],
+  "verification": {
+    "method": "web_search + curl",
+    "verifiedUrls": [
+      "https://news.ycombinator.com/item?id=49417766",
+      "https://narilabs.com/blog/nari-labs-leads-coval-voice-ai-benchmarks/",
+      "https://github.com/anuj0456/OpenArch",
+      "https://jetkvm.com/blog/introducing-jetkvm-mini"
+    ],
+    "verifiedAt": "2026-09-15T08:15:00+08:00"
+  },
+  "projects": [
+    {
+      "title": "Nari TTS/ASR API聚合服务",
+      "slug": "2026-09-15-nari-voice-api-aggregator",
+      "source": "Show HN / HN讨论",
+      "sourceUrl": "https://news.ycombinator.com/item?id=49699267",
+      "feasibility": 4,
+      "category": "服务"
+    },
+    {
+      "title": "Autonomous AI Operator - 独立开发者的AI管家",
+      "slug": "2026-09-15-ai-operator-service",
+      "source": "Ask HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=47281854",
+      "feasibility": 3,
+      "category": "服务"
+    }
+  ],
+  "notes": "Ask HN宝藏线程'那些月入$500的副业项目'有多个案例可深挖。TTS/ASR聚合服务门槛低、变现快；AI Operator咨询服务门槛高但客单价高。周末数据较少正常（40条），GitHub Trending权重提升。"
+}
