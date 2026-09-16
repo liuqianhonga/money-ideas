@@ -1,0 +1,23 @@
+{
+  "date": "2026-09-16",
+  "collector": "钱多多",
+  "sourcePipeline": "MCP biz_opportunity since_hours=48 take=40 + GitHub Trending + web_search",
+  "sourcesUsed": ["hn_best", "producthunt", "techcrunch_ai", "github_trending"],
+  "verification": {
+    "method": "curl+regex + web_search",
+    "verifiedUrls": [
+      "https://github.com/pizza-bot-app/pizza-bot",
+      "https://github.com/ordewell/ordewell",
+      "https://www.formas.ai/cartesian",
+      "https://withcapsule.app/"
+    ],
+    "verifiedAt": "2026-09-16T08:15:00+08:00"
+  },
+  "projects": [
+    {"title": "Pizza Bot", "slug": "2026-09-16-pizza-bot", "source": "Show HN", "sourceUrl": "https://github.com/pizza-bot-app/pizza-bot", "feasibility": 3, "category": "工具"},
+    {"title": "Ordewell", "slug": "2026-09-16-ordewell", "source": "Show HN", "sourceUrl": "https://github.com/ordewell/ordewell", "feasibility": 4, "category": "工具"},
+    {"title": "Cartesian 3D", "slug": "2026-09-16-cartesian-3d", "source": "HN", "sourceUrl": "https://www.formas.ai/cartesian", "feasibility": 2, "category": "工具"}
+  ],
+  "signals_count": 9,
+  "notes": "本周Ask HN宝藏线程再次出现，内含Dead Man's Switch案例（$1000/月，8年持续盈利）。Pizza Bot和Ordewell均为AWS/开源生态项目，商业落地路径清晰。Cartesian验证了AI 3D赛道热度，但个人难以直接复制，适合作为生态机会关注。"
+}
