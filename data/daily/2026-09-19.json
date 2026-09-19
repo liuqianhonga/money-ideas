@@ -1,0 +1,55 @@
+{
+  "date": "2026-09-19",
+  "collector": "钱多多",
+  "sourcePipeline": "MCP biz_opportunity start_time=2026-09-14T16:00:00Z take=800 → 215 items, 10 providers | Ask HN 49417766 (T0宝藏线程) | chinese-independent-developer GitHub",
+  "sourcesUsed": ["hn_best", "producthunt", "techcrunch_ai", "huxiu", "tmtpost", "weiyangx", "sspai", "mpaypass", "sina_finance_roll", "ft_chinese"],
+  "verification": {
+    "method": "curl+title_check",
+    "verifiedUrls": [
+      "https://www.deadmansswitch.net",
+      "https://explorer.withfudge.com",
+      "https://live.zyue.wiki/",
+      "https://www.swqifu.com/"
+    ],
+    "verifiedAt": "2026-09-19T08:00:00+08:00"
+  },
+  "projects": [
+    {
+      "title": "Dead Man's Switch — 死了才发邮件的网站",
+      "slug": "dead-mans-switch",
+      "source": "Ask HN 宝藏线程",
+      "sourceUrl": "https://news.ycombinator.com/item?id=49417766",
+      "feasibility": 4,
+      "confidence": 77,
+      "category": "服务"
+    },
+    {
+      "title": "Fudge Explorer — 给AI提供设计审美的截图数据库",
+      "slug": "fudge-explorer",
+      "source": "Ask HN 宝藏线程",
+      "sourceUrl": "https://explorer.withfudge.com",
+      "feasibility": 3,
+      "confidence": 62,
+      "category": "工具"
+    },
+    {
+      "title": "云播切片 — 直播复盘的自动化工具",
+      "slug": "yunbo-slices",
+      "source": "chinese-independent-developer",
+      "sourceUrl": "https://live.zyue.wiki/",
+      "feasibility": 4,
+      "confidence": 73,
+      "category": "工具"
+    },
+    {
+      "title": "慧报价 — AI外贸报价工具",
+      "slug": "hui-quote",
+      "source": "chinese-independent-developer",
+      "sourceUrl": "https://www.swqifu.com/",
+      "feasibility": 3,
+      "confidence": 58,
+      "category": "工具"
+    }
+  ],
+  "notes": "48h内MCP biz_opportunity返回0条（数据停更于2026-09-15），改用start_time拉取215条。核心信号来自Ask HN T0宝藏线程（$500/month 2026）+ chinese-independent-developer仓库。深度项目4个：死灵开关（长尾被动收入）、Fudge Explorer（MCP设计数据壁垒）、云播切片（直播复盘刚需）、慧报价（外贸B2B AI工具）。"
+}
