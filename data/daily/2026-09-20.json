@@ -1,0 +1,48 @@
+{
+  "date": "2026-09-20",
+  "collector": "钱多多",
+  "sourcePipeline": "MCP biz_opportunity since_hours=48 take=40 + GitHub Trending + Product Hunt + Sideidea",
+  "sourcesUsed": ["hn_best", "producthunt", "sideidea"],
+  "verification": {
+    "method": "curl + regex title extraction",
+    "verifiedUrls": [
+      "https://github.com/trycua/cua",
+      "https://john.hartnup.uk/2026/06/07/ai-event-posters.html",
+      "https://planetscale.com/blog/introducing-tin",
+      "https://www.producthunt.com/products/whaleread",
+      "https://www.producthunt.com/products/robot-recipes"
+    ],
+    "verifiedAt": "2026-09-20T06:15:00Z"
+  },
+  "projects": [
+    {
+      "title": "CUA-S1 - Computer Use 专用决策模型",
+      "slug": "2026-09-20-cua-s1-computer-use-agent",
+      "source": "Hacker News Show HN",
+      "sourceUrl": "https://github.com/trycua/cua",
+      "feasibility": 4,
+      "category": "工具",
+      "confidenceScore": 77
+    },
+    {
+      "title": "AI 活动海报生成器",
+      "slug": "2026-09-20-ai-poster-generator",
+      "source": "Hacker News",
+      "sourceUrl": "https://john.hartnup.uk/2026/06/07/ai-event-posters.html",
+      "feasibility": 5,
+      "category": "内容",
+      "confidenceScore": 84
+    },
+    {
+      "title": "WhaleRead - 本地 AI 翻译阅读器",
+      "slug": "2026-09-20-whaleread-local-ai-reader",
+      "source": "Product Hunt",
+      "sourceUrl": "https://www.producthunt.com/products/whaleread",
+      "feasibility": 4,
+      "category": "工具",
+      "confidenceScore": 72
+    }
+  ],
+  "signals": 9,
+  "notes": "本周数据质量较高，HN 有 690 评论的 AI 海报讨论是强信号。CUA-S1 是开源 Agent 工具的好机会。WhaleRead 验证了本地 AI 阅读的隐私需求。"
+}
