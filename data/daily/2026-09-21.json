@@ -1,79 +1,44 @@
 {
   "date": "2026-09-21",
   "collector": "钱多多",
-  "sourcePipeline": "MCP biz_opportunity since_hours=48 take=40 + GitHub Trending + V2EX + Sideidea",
-  "sourcesUsed": ["hn_best", "producthunt", "showhn"],
+  "sourcePipeline": "MCP biz_opportunity since_hours=48 take=40 + web_search",
+  "sourcesUsed": ["hn_best", "producthunt", "mpaypass"],
   "verification": {
-    "method": "curl+regex title check",
+    "method": "curl+regex + web_search",
     "verifiedUrls": [
       "https://radius.to/",
-      "https://github.com/trycua/cua",
       "https://evaluation.club",
-      "https://planetscale.com/blog/introducing-tin",
-      "https://seldo.com/posts/nobody-pays-for-open-source-we-can-force-them-to/",
-      "https://john.hartnup.uk/2026/06/07/ai-event-posters.html"
+      "https://www.producthunt.com/products/milliseconds-ai",
+      "https://www.producthunt.com/products/slop-goggles"
     ],
-    "verifiedAt": "2026-09-21T08:00:00+08:00"
+    "verifiedAt": "2026-09-21T14:30:00+08:00"
   },
   "projects": [
     {
-      "title": "CUA-S1 – 表单填写专用 AI 决策模型",
-      "slug": "2026-09-21-cua-s1-form-decision-model",
-      "source": "Show HN",
-      "sourceUrl": "https://github.com/trycua/cua",
+      "title": "Radius – Meetup替代平台",
+      "slug": "radius-meetup-alternative",
+      "source": "Hacker News Show HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=49777539",
       "feasibility": 4,
       "category": "工具"
     },
     {
-      "title": "Radius – Meetup.com 替代平台",
-      "slug": "2026-09-21-radius-meetup-alternative",
-      "source": "Show HN",
-      "sourceUrl": "https://radius.to/",
-      "feasibility": 3,
+      "title": "Milliseconds.ai – 决策API",
+      "slug": "milliseconds-ai-api",
+      "source": "Product Hunt",
+      "sourceUrl": "https://www.producthunt.com/products/milliseconds-ai",
+      "feasibility": 5,
+      "category": "工具"
+    },
+    {
+      "title": "Slop Goggles – AI内容检测插件",
+      "slug": "slop-goggles-ai-detector",
+      "source": "Product Hunt",
+      "sourceUrl": "https://www.producthunt.com/products/slop-goggles",
+      "feasibility": 4,
       "category": "工具"
     }
   ],
-  "signals": [
-    {
-      "title": "Show HN: Radius – Meetup.com 替代平台",
-      "category": "独立项目机会",
-      "replicable": true
-    },
-    {
-      "title": "Prompts aren't Real – Agentic Product 博客",
-      "category": "AI工具趁早",
-      "replicable": true
-    },
-    {
-      "title": "CUA-S1 – Computer Use 专用小模型",
-      "category": "AI工具趁早",
-      "replicable": true
-    },
-    {
-      "title": "TIN – Postgres 全文搜索引擎",
-      "category": "开源商机",
-      "replicable": false
-    },
-    {
-      "title": "Nobody pays for FOSS – 开源付费强制方案",
-      "category": "独立项目机会",
-      "replicable": true
-    },
-    {
-      "title": "AI 活动海报生成器实测",
-      "category": "AI工具趁早",
-      "replicable": true
-    },
-    {
-      "title": "Sideidea: 2小时做 AI 图片工作台月收入 3 万",
-      "category": "国内副业灵感",
-      "replicable": true
-    },
-    {
-      "title": "OpenAgent – Windows 自托管 AI Agent 平台",
-      "category": "国内副业灵感",
-      "replicable": true
-    }
-  ],
-  "notes": "周末数据较少（48h 内 40 条），从 HN/Show HN 精选。CUA-S1 是今日最佳推荐：小模型解决具体问题，技术门槛低，变现路径清晰。Radius 可作为 Me too 项目尝试，但需注意网络效应冷启动难题。"
+  "signals_count": 7,
+  "notes": "周末数据较少正常（40条原始）。重点挖掘了Show HN项目和Product Hunt新产品。Ask HN $500/month线程有更新但内容较泛，未做深度拆解。FOSS付费讨论偏向理念层面，未作为独立项目收录。"
 }
