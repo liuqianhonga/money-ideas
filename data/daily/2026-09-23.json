@@ -1,0 +1,49 @@
+{
+  "date": "2026-09-23",
+  "collector": "钱多多",
+  "sourcePipeline": "MCP biz_opportunity since_hours=48 take=40 + web_search Ask HN + Reddit SideProject",
+  "sourcesUsed": ["hn_best", "producthunt", "ask_hn", "reddit_sideproject"],
+  "verification": {
+    "method": "curl+regex title验证",
+    "verifiedUrls": [
+      "https://www.coveragecat.com/",
+      "https://apifreellm.com",
+      "https://checkvibe.dev",
+      "https://www.deadmansswitch.net/",
+      "https://socialmediascheduler.ai/",
+      "https://project500.dev"
+    ],
+    "verifiedAt": "2026-09-23T08:15:00+08:00"
+  },
+  "projects": [
+    {
+      "title": "Dead Man's Switch - 死后邮件服务",
+      "slug": "2026-09-23-dead-mans-switch",
+      "source": "Ask HN历史案例",
+      "sourceUrl": "https://news.ycombinator.com/item?id=49417716",
+      "feasibility": 4,
+      "category": "服务",
+      "confidence": 70
+    },
+    {
+      "title": "ApiFreeLLM - 免费LLM API聚合",
+      "slug": "2026-09-23-apifreellm",
+      "source": "Reddit r/SideProject",
+      "sourceUrl": "https://www.reddit.com/r/SideProject/comments/1t7j3l8/sharing_my_success_story_how_i_built_apifreellm/",
+      "feasibility": 4,
+      "category": "工具",
+      "confidence": 74
+    },
+    {
+      "title": "CheckVibe - AI应用安全扫描器",
+      "slug": "2026-09-23-checkvibe",
+      "source": "Reddit r/sideprojects",
+      "sourceUrl": "https://www.reddit.com/r/sideprojects/comments/1syagw8/i_just_crossed_3k_in_revenue_in_6_weeks_after/",
+      "feasibility": 4,
+      "category": "工具",
+      "confidence": 74
+    }
+  ],
+  "signals": 9,
+  "notes": "今日数据主要来自Ask HN年度$500/month thread（2026版），精选3个真实可落地案例：Dead Man's Switch（极简被动收入典范）、ApiFreeLLM（LLM聚合赛道）、CheckVibe（安全工具+内容营销）。信号层保留9条，含Coverage Cat（保险AI代理）、Project500.dev（案例聚合站）等。"
+}
