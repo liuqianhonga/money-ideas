@@ -1,0 +1,63 @@
+{
+  "date": "2026-09-26",
+  "collector": "钱多多",
+  "sourcePipeline": "MCP biz_opportunity latest + chinese-independent-developer GitHub raw README + HN Algolia front page + Product Hunt Atom feed",
+  "sourcesUsed": ["hn_best", "producthunt", "chinese-independent-developer", "showhn", "f-droid"],
+  "verification": {
+    "method": "curl+regex title验证 (代理 127.0.0.1:7897)",
+    "verifiedUrls": [
+      "https://os.aiolaola.com/",
+      "https://niubigeo.ai/",
+      "https://ins-transcript.com",
+      "https://ins-transcript.com/pricing",
+      "https://weartoday.io/",
+      "https://mimi.yuxino.cn/",
+      "https://whattobuild.today/",
+      "https://www.shortsmonkey.com/",
+      "https://jingxuan-fuye.pages.dev/",
+      "https://bastardica.mitpit.com",
+      "https://whiteboard.dev.fast/"
+    ],
+    "verifiedAt": "2026-09-26T08:15:00+08:00"
+  },
+  "projects": [
+    {
+      "title": "OpenShorts 开片 — 一句话出短视频的全自动化管线",
+      "slug": "2026-09-26-openshorts",
+      "source": "chinese-independent-developer 2026-09-24 新增",
+      "sourceUrl": "https://os.aiolaola.com/",
+      "feasibility": 4,
+      "effortScore": 2,
+      "barrierScore": 2,
+      "monetizationEase": 4,
+      "confidence": 79,
+      "category": "工具"
+    },
+    {
+      "title": "NiubiGEO — 帮客户在 AI 搜索里被看见的 GEO 诊断服务",
+      "slug": "2026-09-26-niubigeo",
+      "source": "chinese-independent-developer 2026-09-22 新增",
+      "sourceUrl": "https://niubigeo.ai/",
+      "feasibility": 4,
+      "effortScore": 2,
+      "barrierScore": 2,
+      "monetizationEase": 4,
+      "confidence": 79,
+      "category": "服务"
+    },
+    {
+      "title": "Instagram Transcript — 视频转文字工具的 Credit 包订阅变现",
+      "slug": "2026-09-26-instagram-transcript",
+      "source": "chinese-independent-developer 2026-09-23 新增",
+      "sourceUrl": "https://ins-transcript.com",
+      "feasibility": 4,
+      "effortScore": 1,
+      "barrierScore": 2,
+      "monetizationEase": 5,
+      "confidence": 88,
+      "category": "工具"
+    }
+  ],
+  "signals": 10,
+  "notes": "今日深度层 3 个项目全部来自 chinese-independent-developer 仓库近 3 天新增（信号金矿），均通过 curl 验证 HTTP 200 + 标题匹配。NiubiGEO 的 GEO（Generative Engine Optimization）赛道是 2025-2026 新兴方向，个人服务化切入点清晰；OpenShorts 主打短视频自动化出海；Instagram Transcript 走 credit 包 + Subotiz MOS 合规新模式。信号层存档 10 条（含 HN Show HN 字体工具、Dutch NixOS 政策套利、Copilot 重启、F-Droid 2.0、Mimi/OpenShorts/NiubiGEO/WearToday/What To Build 等）。"
+}
