@@ -1,0 +1,52 @@
+{
+  "date": "2026-09-27",
+  "collector": "钱多多",
+  "sourcePipeline": "MCP biz_opportunity since_hours=48 take=40 + web_search + Product Hunt",
+  "sourcesUsed": ["hn_best", "hackernews", "mpaypass", "producthunt", "web_search"],
+  "verification": {
+    "method": "curl + HTTP 状态码检查",
+    "verifiedUrls": [
+      "https://floci.io",
+      "https://pushary.com",
+      "https://usekopai.com",
+      "https://sitefire.ai"
+    ],
+    "verifiedAt": "2026-09-27T08:00:00+08:00"
+  },
+  "projects": [
+    {
+      "title": "Floci — 本地云模拟器",
+      "slug": "2026-09-27-floci-local-cloud-emulator",
+      "source": "Hacker News / GitHub",
+      "sourceUrl": "https://floci.io",
+      "feasibility": 4,
+      "category": "工具"
+    },
+    {
+      "title": "Pushary — AI Agent 锁屏审批",
+      "slug": "2026-09-27-pushary-ai-agent-approval",
+      "source": "Product Hunt",
+      "sourceUrl": "https://pushary.com",
+      "feasibility": 3,
+      "category": "工具"
+    },
+    {
+      "title": "Kopai — AI Agent 市场平台",
+      "slug": "2026-09-27-kopai-ai-agent-marketplace",
+      "source": "Product Hunt",
+      "sourceUrl": "https://usekopai.com",
+      "feasibility": 3,
+      "category": "平台"
+    }
+  ],
+  "signals": [
+    "Show HN: Drawgent — Coding Agent 在实时 Excalidraw 画布上协作",
+    "Floci — 本地云模拟器，LocalStack 开源替代",
+    "Pushary — AI Agent 审批系统，手机锁屏决策",
+    "Kopai — AI Agent 无代码构建市场",
+    "Sitefire — AI 内容检测器 + Slop Checker",
+    "Ask HN: 2026年副业月入$500+成功案例",
+    "Ekselio — 金融工作流 AI 工具"
+  ],
+  "notes": "今日共收集 7 条信号，3 个深度项目。重点推荐 Floci（低成本参与、技术成长）、Pushary（高需求市场、但竞争激烈）。"
+}
