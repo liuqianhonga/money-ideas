@@ -1,0 +1,55 @@
+{
+  "date": "2026-09-28",
+  "collector": "钱多多",
+  "sourcePipeline": "MCP biz_opportunity since_hours=48 take=40 + chinese-independent-developer GitHub + Sideidea + Ask HN",
+  "sourcesUsed": ["hn_best", "chinese-independent-developer", "sideidea", "ask_hn"],
+  "verification": {
+    "method": "curl+regex HTTP 200检查",
+    "verifiedUrls": [
+      "https://professional-headshot.ai/",
+      "https://erasebgpro.com",
+      "https://niubigeo.ai/",
+      "https://xhs.jvxiao.cn/"
+    ],
+    "verifiedAt": "2026-09-28T08:15:00+08:00"
+  },
+  "projects": [
+    {
+      "title": "Professional-Headshot.ai – AI职业头像生成器",
+      "slug": "2026-09-28-professional-headshot-ai",
+      "source": "chinese-independent-developer",
+      "sourceUrl": "https://github.com/1c7/chinese-independent-developer",
+      "feasibility": 4,
+      "category": "工具",
+      "confidence": 85
+    },
+    {
+      "title": "Erase Background Pro – AI一键抠图工具",
+      "slug": "2026-09-28-erase-background-pro",
+      "source": "chinese-independent-developer",
+      "sourceUrl": "https://github.com/1c7/chinese-independent-developer",
+      "feasibility": 4,
+      "category": "工具",
+      "confidence": 85
+    },
+    {
+      "title": "NiubiGeo – AI品牌可见度检测工具",
+      "slug": "2026-09-28-niubigeo-geo-tool",
+      "source": "chinese-independent-developer",
+      "sourceUrl": "https://github.com/1c7/chinese-independent-developer",
+      "feasibility": 3,
+      "category": "服务",
+      "confidence": 77
+    },
+    {
+      "title": "薯小二 – 小红书合规运营工具箱",
+      "slug": "2026-09-28-shuxiaoer-xhs-tool",
+      "source": "chinese-independent-developer",
+      "sourceUrl": "https://github.com/1c7/chinese-independent-developer",
+      "feasibility": 4,
+      "category": "工具",
+      "confidence": 92
+    }
+  ],
+  "notes": "今日精选4个项目，全部来自chinese-independent-developer仓库（60.5k star金矿）。重点筛选了变现路径清晰、门槛合理的工具类项目。薯小二信心指数最高（92分），适合快速上手。"
+}
