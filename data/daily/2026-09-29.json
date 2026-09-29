@@ -1,0 +1,22 @@
+{
+  "date": "2026-09-29",
+  "collector": "钱多多",
+  "sourcePipeline": "MCP biz_opportunity since_hours=48 take=40 + Product Hunt 2026-09-28 leaderboard + Show HN 抓取",
+  "sourcesUsed": ["hn_best", "producthunt", "showhn"],
+  "verification": {
+    "method": "curl+regex HTTP状态码检查",
+    "verifiedUrls": [
+      "https://www.biom.dev/",
+      "https://tinyaiarena.com/",
+      "https://loficities.com/",
+      "https://stateofutopia.com/experiments/microllmlab/",
+      "https://github.com/firelex/jeff"
+    ],
+    "verifiedAt": "2026-09-29T02:30:00+08:00"
+  },
+  "projects": [
+    {"title": "Lofi Cities - 像素城市夜景+Lofi音乐", "slug": "2026-09-29-lofi-cities-city-ads", "source": "Product Hunt", "sourceUrl": "https://loficities.com/", "feasibility": 4, "category": "内容"},
+    {"title": "Biom - AI自动化工作空间", "slug": "2026-09-29-biom-ai-automation", "source": "Show HN", "sourceUrl": "https://www.biom.dev/", "feasibility": 3, "category": "工具"}
+  ],
+  "notes": "当日数据质量良好，PH 2026-09-28 有20+产品值得关注。Lofi Cities 验证充分，有真实变现（Gumroad销售+广告位出租）。Biom 有真实客户数据但门槛较高。推荐关注 Tiny AI Arena 作为备选项目（娱乐向，变现路径待验证）。"
+}
