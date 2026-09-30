@@ -1,0 +1,38 @@
+{
+  "date": "2026-09-30",
+  "collector": "钱多多",
+  "sourcePipeline": "MCP biz_opportunity since_hours=48 take=40 + web_search",
+  "sourcesUsed": ["hn_best", "openai_blog", "github"],
+  "verification": {
+    "method": "web_extract + web_search交叉验证",
+    "verifiedUrls": [
+      "https://openai.com/index/introducing-dots/",
+      "https://openai.com/index/introducing-gpt-6-1-sol/",
+      "https://github.com/firelex/jeff",
+      "https://github.com/PostHog/jeeves",
+      "https://news.ycombinator.com/item?id=49417766"
+    ],
+    "verifiedAt": "2026-09-30T10:00:00+08:00"
+  },
+  "projects": [
+    {
+      "title": "AI Agent成本控制服务——基于GPT-6.1 Sol低缓存成本",
+      "slug": "2026-09-30-gpt6-1-sol-agent-service",
+      "source": "OpenAI DevDay 2026",
+      "sourceUrl": "https://openai.com/index/introducing-gpt-6-1-sol/",
+      "feasibility": 4,
+      "category": "工具",
+      "confidence": 82
+    },
+    {
+      "title": "Jeff决策模型本地化部署服务——替代收费Jev API",
+      "slug": "2026-09-30-jeff-local-deployment-service",
+      "source": "GitHub - firelex/jeff",
+      "sourceUrl": "https://github.com/firelex/jeff",
+      "feasibility": 4,
+      "category": "工具",
+      "confidence": 78
+    }
+  ],
+  "notes": "今日核心机会：GPT-6.1 Sol缓存成本降至$0.10/百万token（降幅95%），使得AI Agent运营成本大幅降低；Jeff作为Jev的开源替代，本地部署可永久免费使用，高频决策场景降本效果明显。两个项目都适合有技术背景的开发者快速上手。"
+}
