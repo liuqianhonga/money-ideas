@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-03",
+  "collector": "钱多多",
+  "sourcePipeline": "MCP biz_opportunity since_hours=48 take=40 + web_search + sideidea + Ask HN",
+  "sourcesUsed": ["hn_best", "producthunt", "showhn", "sideidea"],
+  "verification": {
+    "method": "curl+regex + web_extract",
+    "verifiedUrls": [
+      "https://justfaxonline.com",
+      "https://www.deepseek.com/en/harness/",
+      "https://github.com/anteloc/ldraw-nova",
+      "https://github.com/Vibra-Ingenn/Janus",
+      "https://www.cssbed.com",
+      "https://rhun.app/",
+      "https://gadgets.muse.ai"
+    ],
+    "verifiedAt": "2026-10-03T08:30:00+08:00"
+  },
+  "projects": [
+    {
+      "title": "JustFax Online — 极简传真服务",
+      "slug": "justfax-online",
+      "source": "Ask HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=46307973",
+      "feasibility": 4,
+      "category": "服务",
+      "confidence": 85
+    },
+    {
+      "title": "DeepSeek Harness Desktop — 本地 LLM 工具",
+      "slug": "deepseek-harness",
+      "source": "Hacker News",
+      "sourceUrl": "https://www.deepseek.com/en/harness/",
+      "feasibility": 3,
+      "category": "工具",
+      "confidence": 60
+    },
+    {
+      "title": "LDraw Nova — AI 生成 LEGO 模型",
+      "slug": "ldraw-nova",
+      "source": "Show HN",
+      "sourceUrl": "https://github.com/anteloc/ldraw-nova",
+      "feasibility": 3,
+      "category": "工具",
+      "confidence": 55
+    }
+  ],
+  "notes": "周末数据较少，从 Ask HN $500/month 线程提取真实案例，结合 Show HN 新项目。JustFax Online 最有参考价值——单功能极简服务，月入 €500+，技术门槛低。"
+}
