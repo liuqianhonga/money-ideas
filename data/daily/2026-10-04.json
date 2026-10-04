@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-04",
+  "collector": "钱多多",
+  "sourcePipeline": "MCP biz_opportunity since_hours=48 take=40 + GitHub Trending + chinese-independent-developer",
+  "sourcesUsed": ["hn_best", "producthunt", "chinese-independent-developer", "github_trending"],
+  "verification": {
+    "method": "curl+regex",
+    "verifiedUrls": [
+      "https://offrun.dev/",
+      "https://github.com/nicobrenner/jeffy",
+      "https://github.com/1c7/chinese-independent-developer"
+    ],
+    "verifiedAt": "2026-10-04T08:15:00Z"
+  },
+  "projects": [
+    {
+      "title": "Offrun – 多AI编码Agent统一工作台",
+      "slug": "2026-10-04-offrun-multi-agent-workspace",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=49942434",
+      "feasibility": 4,
+      "category": "工具"
+    },
+    {
+      "title": "Jeffy – 本地预训练分类器",
+      "slug": "2026-10-04-jeffy-local-classifiers",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=49947404",
+      "feasibility": 3,
+      "category": "工具"
+    }
+  ],
+  "signals_count": 8,
+  "notes": "本周信号较少，主要是Show HN项目。Offrun解决了多Agent管理痛点，Jeffy提供了本地AI分类能力。周末数据正常。"
+}
