@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-05",
+  "collector": "钱多多",
+  "sourcePipeline": "MCP biz_opportunity since_hours=48 take=40 + Sideidea + GitHub Trending",
+  "sourcesUsed": ["hn_best", "producthunt"],
+  "verification": {
+    "method": "curl+regex",
+    "verifiedUrls": [
+      "https://scimigo.com/en/learn/build-with-python/01-draw-with-python",
+      "https://github.com/Niko1221/Strata",
+      "https://github.com/allenv0/SCM",
+      "https://blog.cloudflare.com/next-git-platform-on-cloudflare/"
+    ],
+    "verifiedAt": "2026-10-05T08:15:00Z"
+  },
+  "projects": [
+    {
+      "title": "Build with Python – 浏览器内可视化Python课程",
+      "slug": "2026-10-05-build-with-python-course",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=49956771",
+      "feasibility": 4,
+      "category": "教育"
+    },
+    {
+      "title": "SCM – macOS本地AI图片/视频搜索引擎",
+      "slug": "2026-10-05-scm-macos-ai-search",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=49952111",
+      "feasibility": 3,
+      "category": "工具"
+    },
+    {
+      "title": "Strata – 本地运行Qwen 125B大模型",
+      "slug": "2026-10-05-strata-local-llm",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=49953495",
+      "feasibility": 3,
+      "category": "工具"
+    }
+  ],
+  "signals_count": 8,
+  "notes": "今天数据主要来自Show HN，3个项目均验证通过。Build with Python课程模式最简单，适合快速上手；SCM和Strata技术门槛较高，但市场验证充分。Cloudflare Git平台机会值得追踪。"
+}
