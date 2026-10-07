@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-07",
+  "collector": "钱多多",
+  "sourcePipeline": "MCP biz_opportunity since_hours=48 take=40 + chinese-independent-developer GitHub + Hacker News Trending",
+  "sourcesUsed": ["hn_best", "producthunt", "chinese-independent-developer"],
+  "verification": {
+    "method": "curl+regex + web_extract",
+    "verifiedUrls": [
+      "https://github.com/1c7/chinese-independent-developer",
+      "https://github.com/FeSens/openTPU",
+      "https://jotbus.com/",
+      "https://www.parseable.com"
+    ],
+    "verifiedAt": "2026-10-07T08:00:00+08:00"
+  },
+  "projects": [
+    {
+      "title": "问迹 wenjiAI",
+      "slug": "wenji-ai",
+      "source": "chinese-independent-developer",
+      "sourceUrl": "https://github.com/1c7/chinese-independent-developer",
+      "feasibility": 4,
+      "category": "AI工具"
+    },
+    {
+      "title": "InkDoo AI 插图",
+      "slug": "inkdoo",
+      "source": "chinese-independent-developer",
+      "sourceUrl": "https://github.com/1c7/chinese-independent-developer",
+      "feasibility": 5,
+      "category": "工具"
+    },
+    {
+      "title": "OpenTPU 开源芯片",
+      "slug": "opentpu",
+      "source": "Hacker News",
+      "sourceUrl": "https://github.com/FeSens/openTPU",
+      "feasibility": 3,
+      "category": "开源"
+    }
+  ],
+  "signals": 7,
+  "notes": "今日数据较少，GitHub Trending 权重提升。重点挖掘 chinese-independent-developer 仓库，发现 InkDoo 按张付费模式值得推荐。"
+}
