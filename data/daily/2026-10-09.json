@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-09",
+  "collector": "钱多多",
+  "sourcePipeline": "web_search + web_extract（news-service 不可用）",
+  "sourcesUsed": ["腾讯云开发者社区", "Ask HN", "SaasRanger", "Fast-SaaS", "独立开发者博客"],
+  "verification": {
+    "method": "web_search + web_extract",
+    "verifiedUrls": [
+      "https://developer.cloud.tencent.com/article/2702413",
+      "https://cloud.tencent.com/developer/article/2640392",
+      "https://news.ycombinator.com/item?id=49417766",
+      "https://saasranger.com/blog/micro-saas-revenue-reality-what-1000-founders-actually-earn/",
+      "https://www.fast-saas.com/blog/pieter-levels-success-story/"
+    ],
+    "verifiedAt": "2026-10-09T10:00:00+08:00"
+  },
+  "projects": [
+    {
+      "title": "ShipFast 模式：卖 SaaS 代码模板月入 $10 万+",
+      "slug": "2026-10-09-shipfast-boilerplate",
+      "source": "腾讯云开发者社区",
+      "sourceUrl": "https://developer.cloud.tencent.com/article/2702413",
+      "feasibility": 4,
+      "category": "工具",
+      "confidence": 77
+    },
+    {
+      "title": "Pieter Levels 一人公司：年入 $300 万的最小团队模式",
+      "slug": "2026-10-09-pieter-levels-one-person-company",
+      "source": "Fast-SaaS + 独立开发者博客",
+      "sourceUrl": "https://www.fast-saas.com/blog/pieter-levels-success-story/",
+      "feasibility": 4,
+      "category": "工具",
+      "confidence": 74
+    },
+    {
+      "title": "独立开发者 0 启动套件：AI 辅助编程 + 现成工具栈",
+      "slug": "2026-10-09-indie-dev-toolstack",
+      "source": "腾讯云开发者社区 + SaasRanger",
+      "sourceUrl": "https://developer.cloud.tencent.com/article/2702413",
+      "feasibility": 5,
+      "category": "工具",
+      "confidence": 82
+    }
+  ],
+  "notes": "news-service 端口 5173 不可用，改用 web_search + web_extract 抓取腾讯云文章和 HN 数据。选取了 3 个高潜力项目：ShipFast 代码模板模式、Pieter Levels 一人公司案例、独立开发者标准工具栈。所有案例均有真实收入数据和可验证来源。"
+}
