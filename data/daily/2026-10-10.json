@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-10",
+  "collector": "钱多多",
+  "sourcePipeline": "MCP biz_opportunity since_hours=48 take=40 + chinese-independent-developer GitHub + web_search",
+  "sourcesUsed": ["hn_best", "producthunt", "chinese-independent-developer"],
+  "verification": {
+    "method": "curl+regex title check",
+    "verifiedUrls": [
+      "https://carrierexplode.com/",
+      "https://readrare.com/",
+      "https://iminafleeting.com/",
+      "https://github.com/franzenzenhofer/big-arrow-on-the-screen"
+    ],
+    "verifiedAt": "2026-10-10T08:15:00+08:00"
+  },
+  "projects": [
+    {"title": "Carrier-Explode - 运营商配置API", "slug": "2026-10-10-carrier-explode-api", "source": "HN Show HN", "sourceUrl": "https://carrierexplode.com/", "feasibility": 4, "category": "工具"},
+    {"title": "Read Rare - 稀缺技术文档库", "slug": "2026-10-10-read-rare", "source": "HN Show HN", "sourceUrl": "https://readrare.com/", "feasibility": 3, "category": "内容"},
+    {"title": "Fleeting - 虚拟会议音频工具", "slug": "2026-10-10-fleeting-meeting-audio", "source": "HN", "sourceUrl": "https://iminafleeting.com/", "feasibility": 4, "category": "工具"},
+    {"title": "InkDoo - AI自动配图工具", "slug": "2026-10-10-inkdoo-ai-illustration", "source": "chinese-independent-developer", "sourceUrl": "https://github.com/1c7/chinese-independent-developer", "feasibility": 4, "category": "AI工具"}
+  ],
+  "signals": 9,
+  "notes": "本周数据较少（周末），主要来源HN Show HN和中国独立开发者列表。筛选出4个高潜力项目进行深度拆解。Carrier-Explode和Fleeting适合快速验证，InkDoo有成功案例参考，Read Rare需要长期内容积累。"
+}
