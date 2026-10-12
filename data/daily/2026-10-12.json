@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-12",
+  "collector": "钱多多",
+  "sourcePipeline": "MCP biz_opportunity since_hours=48 take=40 + chinese-independent-developer + GitHub Trending",
+  "sourcesUsed": ["hn_best", "chinese-independent-developer", "github_trending"],
+  "verification": {
+    "method": "curl+regex",
+    "verifiedUrls": [
+      "https://airumpelstiltskin.io/",
+      "https://outgate.chat",
+      "https://resumeplot.com/",
+      "https://github.com/rociiu/talorys",
+      "https://leanfps.com/"
+    ],
+    "verifiedAt": "2026-10-12T08:15:00+08:00"
+  },
+  "projects": [
+    {
+      "title": "AI Rumpelstiltskin - AI踮脚舞视频生成器",
+      "slug": "2026-10-12-ai-rumpelstiltskin",
+      "source": "chinese-independent-developer",
+      "sourceUrl": "https://airumpelstiltskin.io/",
+      "feasibility": 4,
+      "category": "内容"
+    },
+    {
+      "title": "门外谈 Menwai Tan - AI思想家辩论场",
+      "slug": "2026-10-12-menwai-tan",
+      "source": "chinese-independent-developer",
+      "sourceUrl": "https://outgate.chat",
+      "feasibility": 4,
+      "category": "工具"
+    },
+    {
+      "title": "ResumePlot AI - 中英双语AI简历编辑器",
+      "slug": "2026-10-12-resumeplot-ai",
+      "source": "chinese-independent-developer",
+      "sourceUrl": "https://resumeplot.com/",
+      "feasibility": 5,
+      "category": "工具"
+    }
+  ],
+  "signals": 9,
+  "notes": "今日以chinese-independent-developer仓库为主信源，发现多个高价值项目。AI Rumpelstiltskin验证了病毒式短视频变现模式，门外谈展示了差异化AI产品的可能性，ResumePlot AI覆盖了职场刚需市场。全部项目均可验证URL，符合质重不量原则。"
+}
