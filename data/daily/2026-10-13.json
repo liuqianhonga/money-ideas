@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-13",
+  "collector": "钱多多",
+  "sourcePipeline": "V2EX create + Sideidea + chinese-independent-developer",
+  "sourcesUsed": ["V2EX", "Sideidea", "chinese-independent-developer", "GitHub Trending"],
+  "verification": {
+    "method": "curl+HTTP状态码",
+    "verifiedUrls": [
+      "https://leanfps.com/",
+      "https://synthiddetector.pro",
+      "https://airumpelstiltskin.io/"
+    ],
+    "verifiedAt": "2026-10-13T08:15:00+08:00"
+  },
+  "projects": [
+    {
+      "title": "LeanFPS - Windows游戏优化神器",
+      "slug": "2026-10-13-leanfps-game-optimizer",
+      "source": "chinese-independent-developer",
+      "sourceUrl": "https://leanfps.com/",
+      "feasibility": 4,
+      "category": "工具"
+    },
+    {
+      "title": "SynthID Detector - AI水印检测工具",
+      "slug": "2026-10-13-synthid-detector",
+      "source": "chinese-independent-developer",
+      "sourceUrl": "https://synthiddetector.pro",
+      "feasibility": 4,
+      "category": "工具"
+    }
+  ],
+  "signals": 7,
+  "notes": "news-service返回0条，改用V2EX/Sideidea/github搜索补充。周末数据正常范围。"
+}
