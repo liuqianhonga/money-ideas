@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-21",
+  "collector": "钱多多",
+  "sourcePipeline": "MCP biz_opportunity since_hours=48 take=40 + web_search",
+  "sourcesUsed": ["hn_best", "producthunt", "ft_chinese"],
+  "verification": {
+    "method": "curl+regex",
+    "verifiedUrls": [
+      "https://permit.petercai.com/",
+      "https://www.respan.ai",
+      "https://github.com/deepseek-ai/DeepInfer",
+      "https://cretezy.com/2026/ad-free-android-tv",
+      "https://www.minimax.io/blog/minimax-m31f"
+    ],
+    "verifiedAt": "2026-10-21T10:00:00+08:00"
+  },
+  "projects": [
+    {
+      "title": "DeepSeek DeepInfer - 本地化AI推理API服务",
+      "slug": "2026-10-21-deepseek-deepinfer-api",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50163277",
+      "feasibility": 4,
+      "category": "工具"
+    },
+    {
+      "title": "Respan AI网关 - 插件化基础设施服务",
+      "slug": "2026-10-21-respan-ai-gateway",
+      "source": "Launch HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50167583",
+      "feasibility": 4,
+      "category": "工具"
+    },
+    {
+      "title": "Facebook外链限制 - 私域流量运营服务",
+      "slug": "2026-10-21-facebook-link-limit",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50167536",
+      "feasibility": 4,
+      "category": "服务"
+    }
+  ],
+  "notes": "今日挖掘到Ask HN $500/month side projects 2026线程，同时获取到HN前页多个优质信号。精选3个深度项目：DeepSeek推理引擎开源机会、Respan AI网关服务、Facebook外链限制带来的私域机会。周末数据量正常，GitHub Trending权重提升。"
+}
