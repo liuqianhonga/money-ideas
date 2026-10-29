@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-29",
+  "collector": "钱多多",
+  "sourcePipeline": "GitHub chinese-independent-developer (61.9k stars) + GitHub Trending + Sideidea",
+  "sourcesUsed": ["chinese-independent-developer", "github-trending", "sideidea"],
+  "verification": {
+    "method": "curl HEAD check",
+    "verifiedUrls": [
+      "https://zoopfizz.com",
+      "https://m2c.1ms.dog",
+      "https://everygenai.io",
+      "https://waveradar.us",
+      "https://31415959.github.io/deai-web/",
+      "https://tools.takumikit.com",
+      "https://scribe.uustudio.cc"
+    ],
+    "verifiedAt": "2026-10-29T08:18:00+08:00"
+  },
+  "projects": [
+    {"title": "ZoopFizz - AI视频生成聚合平台", "slug": "2026-10-29-zoopfizz-ai-video-platform", "source": "中国独立开发者列表", "sourceUrl": "https://github.com/1c7/chinese-independent-developer", "feasibility": 4, "category": "工具"},
+    {"title": "AI味体检 - 网文AI味检测器", "slug": "2026-10-29-ai-flavor-detector", "source": "中国独立开发者列表", "sourceUrl": "https://31415959.github.io/deai-web/", "feasibility": 5, "category": "工具"}
+  ],
+  "signals": 8,
+  "notes": "今日重点：视频生成聚合平台（ZoopFizz）和垂直细分工具（AI味体检）。前者验证多模型聚合模式的可行性，后者展示零成本启动的极致案例。周末数据正常，GitHub Trending 补充了技术趋势视角。"
+}
