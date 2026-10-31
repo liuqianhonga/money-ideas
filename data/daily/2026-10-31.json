@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-31",
+  "collector": "钱多多",
+  "sourcePipeline": "MCP biz_opportunity since_hours=48 take=40 + chinese-independent-developer + Sideidea",
+  "sourcesUsed": ["hn_best", "producthunt", "chinese-independent-developer", "sideidea"],
+  "verification": {
+    "method": "curl+regex + web_extract",
+    "verifiedUrls": [
+      "https://github.com/lonthq/overtone-captions",
+      "https://elect.horse/",
+      "https://github.com/herdrdev/herdr-app",
+      "https://github.com/johncassil/dontallow",
+      "https://sideidea.com/article/59",
+      "https://sideidea.com/article/58"
+    ],
+    "verifiedAt": "2026-10-31T08:15:00Z"
+  },
+  "projects": [
+    {"title": "Overtone - 多屏适配字幕工具", "slug": "2026-10-31-overtone-subtitle-tool", "source": "Show HN", "sourceUrl": "https://github.com/lonthq/overtone-captions", "feasibility": 4, "category": "工具"},
+    {"title": "elect.horse - 每日选区划分策略游戏", "slug": "2026-10-31-elect-horse-puzzle-game", "source": "HN Front Page", "sourceUrl": "https://elect.horse/", "feasibility": 4, "category": "内容"},
+    {"title": "ReclipMuse - AI说唱视频生成器", "slug": "2026-10-31-reclipmuse-ai-rap-video", "source": "chinese-independent-developer", "sourceUrl": "https://github.com/1c7/chinese-independent-developer", "feasibility": 5, "category": "内容"}
+  ],
+  "notes": "周末数据正常（40条）。精选3个项目：Overtone（工具类开源）、elect.horse（流量游戏）、ReclipMuse（AI内容创作）。chinese-independent-developer 仓库新增多个AI视频生成工具，变现模式已验证。"
+}
