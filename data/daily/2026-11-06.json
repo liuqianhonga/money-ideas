@@ -1,0 +1,44 @@
+{
+  "date": "2026-11-06",
+  "collector": "钱多多",
+  "sourcePipeline": "MCP biz_opportunity since_hours=48 take=40 + chinese-independent-developer GitHub + Sideidea + V2EX",
+  "sourcesUsed": ["hn_best", "producthunt", "chinese-independent-developer", "v2ex"],
+  "verification": {
+    "method": "curl+regex",
+    "verifiedUrls": [
+      "https://bizpeel.com/zh/",
+      "https://particlelogo.com/zh",
+      "https://crestgeo.com",
+      "https://rapmotion.app",
+      "https://kino.ai"
+    ],
+    "verifiedAt": "2026-11-06T10:00:00+08:00"
+  },
+  "projects": [
+    {
+      "title": "BizPeel - 海外产品真实收入数据库",
+      "slug": "2026-11-06-bizpeel-revenue-database",
+      "source": "chinese-independent-developer",
+      "sourceUrl": "https://bizpeel.com/zh/",
+      "feasibility": 4,
+      "category": "工具"
+    },
+    {
+      "title": "Particle Logo - Logo粒子动画生成器",
+      "slug": "2026-11-06-particle-logo-generator",
+      "source": "chinese-independent-developer",
+      "sourceUrl": "https://particlelogo.com/zh",
+      "feasibility": 5,
+      "category": "工具"
+    },
+    {
+      "title": "CrestGeo - AI品牌可见度检测",
+      "slug": "2026-11-06-crestgeo-ai-brand-monitor",
+      "source": "chinese-independent-developer",
+      "sourceUrl": "https://crestgeo.com",
+      "feasibility": 4,
+      "category": "工具"
+    }
+  ],
+  "notes": "本次收集3个深度项目，均来自chinese-independent-developer仓库11月最新收录。Kino AI（Launch HN）因项目过大（YC S23已融资）不作为深度项目，仅列入信号层。"
+}
