@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-07",
+  "collector": "钱多多",
+  "sourcePipeline": "MCP biz_opportunity since_hours=48 take=40 + Sideidea案例 + HN筛选",
+  "sourcesUsed": ["hn_best", "sideidea", "techcrunch_ai"],
+  "verification": {
+    "method": "curl+regex title check",
+    "verifiedUrls": [
+      "https://devvm.dev/",
+      "https://news.ycombinator.com/item?id=50397429",
+      "http://sideidea.com/article/59",
+      "http://sideidea.com/article/55",
+      "https://scotthelme.co.uk/we-know-15-579-websites-are-infected-how-do-we-tell-them/"
+    ],
+    "verifiedAt": "2026-11-07T08:30:00+08:00"
+  },
+  "projects": [
+    {"title": "DevVM - 云端开发环境SaaS", "slug": "2026-11-07-devvm-cloud-dev-env", "source": "HN Front Page", "sourceUrl": "https://devvm.dev/", "feasibility": 4, "category": "工具"},
+    {"title": "Stencil Stop 模板生意", "slug": "2026-11-07-stencil-stop-template-business", "source": "Sideidea", "sourceUrl": "http://sideidea.com/article/59", "feasibility": 5, "category": "电商"},
+    {"title": "Rent Rround 双边平台", "slug": "2026-11-07-rent-rround-bilateral-platform", "source": "Sideidea", "sourceUrl": "http://sideidea.com/article/55", "feasibility": 4, "category": "服务"},
+    {"title": "AI Agent路由优化服务", "slug": "2026-11-07-ai-agent-routing-optimization", "source": "Show HN", "sourceUrl": "https://news.ycombinator.com/item?id=50397429", "feasibility": 4, "category": "服务"},
+    {"title": "网站安全扫描SaaS", "slug": "2026-11-07-website-security-monitoring-saas", "source": "HN Front Page", "sourceUrl": "https://scotthelme.co.uk/we-know-15-579-websites-are-infected-how-do-we-tell-them/", "feasibility": 4, "category": "安全"}
+  ],
+  "notes": "本次收集5个深度项目，来自Sideidea真实盈利案例（Stencil Stop月入$4万+、Rent Rround季度增长20-30%）和HN高热度Show HN。信号层9条已写入signals/2026-11-07.md。"
+}
