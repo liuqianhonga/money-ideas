@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-09",
+  "collector": "钱多多",
+  "sourcePipeline": "MCP biz_opportunity since_hours=48 take=40 + GitHub Trending",
+  "sourcesUsed": ["hn_best", "producthunt"],
+  "verification": {
+    "method": "curl+regex",
+    "verifiedUrls": [
+      "https://eyesrhythm.com/",
+      "https://wherewerewe.app/",
+      "https://krthr.co/person-of-interest/",
+      "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again"
+    ],
+    "verifiedAt": "2026-11-09T08:00:00+08:00"
+  },
+  "projects": [
+    {
+      "title": "Agent记忆标准化 — 下一个Agent生态基础设施",
+      "slug": "agent-memory-standardization",
+      "source": "Hacker News / LoreKit博客",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50411467",
+      "feasibility": 4,
+      "category": "工具",
+      "confidence": 78
+    },
+    {
+      "title": "Where Were We — 照片地理小游戏",
+      "slug": "photo-location-game",
+      "source": "Hacker News Show HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50408082",
+      "feasibility": 5,
+      "category": "内容",
+      "confidence": 92
+    },
+    {
+      "title": "AI编码助手安全审计服务",
+      "slug": "ai-coding-security-audit",
+      "source": "APIiro安全博客 / Hacker News",
+      "sourceUrl": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
+      "feasibility": 4,
+      "category": "服务",
+      "confidence": 75
+    }
+  ],
+  "signalsCount": 8,
+  "notes": "本周重点：AI Agent生态基础设施机会（记忆标准化）、情感类产品（照片游戏）、AI安全服务（新兴刚需）。周末数据较少但质量较高。"
+}
